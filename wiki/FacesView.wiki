@@ -21,6 +21,6 @@ create varible
 <@set number="111" scope="page"/>
 See this code makes
 {{{
-$_SESSION["name]="bora";
+$_SESSION["name"]="bora";
 var $number=111;
 }}}
