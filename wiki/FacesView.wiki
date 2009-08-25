@@ -43,18 +43,20 @@ create a varible
 
 <@set number="111" scope="page"/>
 See this code makes
-
+}}}
+{{{
 $_SESSION["name"]="bora";
 var $number=111;
-}}}
 
+}}}
 <b>@get Tag</b>	
 get a varible
 
 {{{
 <@get var="thename" select="name" scope="session"/>
 See this code makes
-
+}}}
+{{{
 var $thename = $_SESSION["name"];
 }}}
 
