@@ -50,3 +50,22 @@ add an item a component
  <@item  input="link" title="edit"  url="delete.php?id=$id&name=$name"/>
 </com:grid>
 }}}
+
+
+<b>@pattern Tag</b>	
+creates a template for ui components and <b><@tag></b> is used with
+Example
+
+
+
+{{{
+<@pattern name="mytag"
+            prefix="f"
+            extends="button"
+            text="My text"
+            style="color:navy;font-weight:bold;" 
+            onclick="ajaxevent"/>
+it is used
+ <@tag name="mytag1" pattern="mytag"/>
+ <@tag name="mytag2" pattern="mytag"/>
+}}}
