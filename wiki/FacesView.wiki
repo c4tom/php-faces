@@ -1,5 +1,8 @@
-{{{
 <b>@import Tag<b>
+	
+taglib:  a directory and classname
+prefix tag namespace
+{{{
 <@import prefix="c" taglib="phpf.core" type="static"/>
 this tag call static methods 
 
