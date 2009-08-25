@@ -11,6 +11,17 @@ this tag import components
 }}}
 
 
+<b>@definition Tag</b>
+	
+viewstate : true or false, uses a storage area for components
+stroge : xhtml or session
+eventvalidation : true or false 
+prefix tag namespace
+{{{
+<@definition viewstate="true" stroge="xhtml"/>
+<@definition eventvalidation="true"/>
+}}}
+
 <b>@set Tag</b>	
 create a varible 
 
