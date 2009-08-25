@@ -1,0 +1,7 @@
+{{{
+<@import prefix="c" taglib="phpf.core" type="static"/>
+this tag call static methods 
+
+<@import prefix="c" taglib="phpf.ui"/>
+this tag import components
+}}}
