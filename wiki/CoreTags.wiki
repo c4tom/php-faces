@@ -1,0 +1,34 @@
+Use core tags
+<@import prefix="c" taglib="phpf.core" type="static"/>
+
+<b>if tag<b> 	
+parameters test
+ sample if
+{{{
+<c:if test="{$name=='bora'}">
+<c:out value={$name}/>
+</c:if>
+}}}
+
+<b>else tag<b> 	
+ sample else
+{{{
+<c:if test="{$name=='bora'}">
+<c:out value="{$name}"/>
+<c:else>
+<c:out value="other name {$name}"/>
+</c:else>
+</c:if>
+}}}
+
+<b>elseif tag<b> 	
+parameters test
+ sample elseif
+{{{
+<c:if test="{$name=='bora'}">
+<c:out value="{$name}"/>
+<c:elseif test={$name=='obama'}>
+<c:out value="name obama"/>
+</c:elseif>
+</c:if>
+}}}
