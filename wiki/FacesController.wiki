@@ -11,3 +11,26 @@
   <li><strong>getComponents</strong> (turn of all componets) </li>
   <li><strong>AjaxResponse</strong> (suspends the process of rendering. the client sends the json   data) </li>
 </ul>
+
+Sample
+{{{
+import("phpf.controllers.Facescontroller");
+import("phpf.events.ActionEvent");
+import("phpf.listeners.ActionListener");
+class Simpleevent extends FacesController implements ActionListener
+{
+    function Simpleevent()
+    {
+        parent::FacesController();
+        $this->addActionListener($this);
+        $this->render("event.phpf");
+    }
+    public function actionPerformed(ActionEvent $evt)
+    {
+        $evt->getComponent()->setText("You cliked me");
+        $this->AjaxResponse();
+     
+    }
+}
+
+}}}
