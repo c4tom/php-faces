@@ -39,7 +39,14 @@ var $thename = $_SESSION["name"];
 add an item a component
 
 {{{
-     <sql:sql name="sql1" var="results" query="select * from bir where id=:id">
+     <sql:sql name="sql" var="results" query="select * from table where id=:id">
          <@item id="{$id}" type="integer"/>
      </sql:sql>
+
+<com:grid name="girdx" height="100" width="50" bind="$this.birler" border="1">
+ <@item  input="text" title="id" key="id" />
+ <@item  input="button" key="name" title="name"/>
+ <@item  input="link" title="delete"  url="delete/$id/$name/$id" type="path" separator="_"/>
+ <@item  input="link" title="edit"  url="delete.php?id=$id&name=$name"/>
+</com:grid>
 }}}
