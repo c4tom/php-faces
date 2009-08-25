@@ -1,4 +1,5 @@
-{{{RewriteEngine on
+{{{
+RewriteEngine on
 RewriteCond $1 !^(index\.php|images|themes|css|js|video_files|robots\.txt|favicon\.ico)
 
 RewriteCond %{REQUEST_FILENAME} !-f
