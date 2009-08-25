@@ -2,18 +2,16 @@
 	
 taglib:  a directory and classname
 prefix tag namespace
-{{{
+
 <@import prefix="c" taglib="phpf.core" type="static"/>
 this tag call static methods 
 
-<@import prefix="c" taglib="phpf.ui"/>
+<@import prefix="c" taglib="phpf.ui.*"/>
 this tag import components
 
 
-}}}
 
-<b>@set Tag</b>
-	
+<b>@set Tag</b>	
 create varible 
 
 
