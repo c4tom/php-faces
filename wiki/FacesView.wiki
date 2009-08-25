@@ -69,3 +69,17 @@ it is used
  <@tag name="mytag1" pattern="mytag"/>
  <@tag name="mytag2" pattern="mytag"/>
 }}}
+
+
+<b>@hpattern Tag</b>	
+creates a template for html and <b><@htag></b> is used with
+Example
+
+
+{{{
+<@hpattern name="html">
+              <div style="color:red;font-weight:bold;" > test html pattern{$i} </div>
+             </@hpattern>
+it is used
+<@htag pattern="html"/>
+}}}
