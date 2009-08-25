@@ -1,4 +1,4 @@
-<b>@import Tag<b>
+<b>@import Tag</b>
 	
 taglib:  a directory and classname
 prefix tag namespace
@@ -10,4 +10,16 @@ this tag call static methods
 this tag import components
 
 
+}}}
+
+<b>@set Tag</b>
+	
+create varible 
+
+{{{
+<@set name="bora" scope="session"/>
+<@set number="111" scope="page"/>
+See this code makes
+$_SESSION["name]="bora";
+var $number=111;
 }}}
