@@ -33,3 +33,13 @@ See this code makes
 {{{
 var $thename = $_SESSION["name"];
 }}}
+
+
+<b>@item Tag</b>	
+add an item a component
+
+{{{
+     <sql:sql name="sql1" var="results" query="select * from bir where id=:id">
+         <@item id="{$id}" type="integer"/>
+     </sql:sql>
+}}}
