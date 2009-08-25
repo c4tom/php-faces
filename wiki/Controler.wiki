@@ -5,7 +5,9 @@ The Controller serves as an intermediary between the Model, the View, and any ot
 PHPFaces controller types within:
 
     * FacesController
+
     * ActionControler
+
     * Facete
 
 Facete extends to the FacesController
