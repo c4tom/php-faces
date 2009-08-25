@@ -16,10 +16,11 @@ this tag import components
 	
 create varible 
 
-{{{
+
 <@set name="bora" scope="session"/>
 <@set number="111" scope="page"/>
 See this code makes
+{{{
 $_SESSION["name]="bora";
 var $number=111;
 }}}
