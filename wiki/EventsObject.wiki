@@ -1,0 +1,53 @@
+Event Object 
+  
+{{{
+	
+       
+       $Event->getComponent();// trigger gives the component
+       $Event->getRequestEvent();  // trigger gives the HTTP status post,request etc.
+     
+}}}
+
+
+Events 
+ActionEvent (component is clicked) ActionListener works with
+
+sample Action event
+The Controller
+{{{
+import("phpf.controllers.Facescontroller");
+import("phpf.events.ActionEvent");
+import("phpf.listeners.ActionListener");
+class Simpleeventajax extends FacesController implements ActionListener
+{
+    function Simpleeventajax()
+    {
+        parent::FacesController();
+        $this->addActionListener($this);
+        $this->render("view.phpf");
+    }
+    public function actionPerformed(ActionEvent $evt)
+    {
+        $evt->getComponent()->setText("You cliked me");
+     
+    }
+}
+}}}
+
+
+The view.phpf
+{{{
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    </head>
+    <body>
+        <faces>
+            <@import prefix="face" taglib="phpf.ui.button"/>
+            <face:button name="b1" onclick="actionevent" text="Click Me"/>
+        </faces>
+    </body>
+</html>
+}}}
