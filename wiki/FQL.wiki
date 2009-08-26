@@ -55,7 +55,7 @@ Usege with entitymanager
  echo "count =" .$query->getSingle()."<br>";
 }}}
 
-<b>Sub Queryes</b>
+<b>FQL Sub Queryes</b>
 
 {{{
 SELECT b FROM Blog b WHERE b.coment.id =(SELECT MAX(c.id) FROM  Comment c)
