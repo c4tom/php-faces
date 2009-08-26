@@ -14,7 +14,7 @@ class Blog extends Entity
 }}}
 
 Add Columns
-
+{{{
 /**
  *  @Table(name = "blog")
  */
