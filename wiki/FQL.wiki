@@ -39,3 +39,12 @@ Usege with entitymanager
  $query->execute();
  echo "count =" .$query->getSingle()."<br>";
 }}}
+
+<b>Sub Queryes</b>
+{{{
+SELECT b FROM Blog b WHERE b.coment.id =(SELECT MAX(c.id) FROM  Comment c)
+}}}
+
+{{{
+SELECT o FROM Object o WHERE o.id = (SELECT  AVG(i.id) FROM Object i) OERDER BY o.name
+}}}
