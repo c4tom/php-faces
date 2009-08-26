@@ -4,7 +4,7 @@ A view is simply a web page, or a page fragment, like a header, footer, sidebar,
 
 view files are interpreted by the runtime facesrenderer
 
-<faces> And </ faces> tag is interpreted between the codes
+<faces> And </faces>}}} tag is interpreted between the codes
 
 Sample Faces View
 {{{
