@@ -44,8 +44,13 @@ The SQL functions
 
 
 {{{
-SELECT count(b.id) from Blog b
+SELECT COUNT(b.id) FROM Blog b
 }}}
+
+{{{
+SELECT MAX(b.id) FROM Blog b
+}}}
+
 Usege with entitymanager
 
 
