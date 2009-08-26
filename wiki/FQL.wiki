@@ -1,4 +1,5 @@
 FQL(Faces Query Language)
+
 select statement
 
 {{{
@@ -29,11 +30,25 @@ SELECT b from Blog b limit 0,5
 SELECT c from Categories c  GROUP BY c.id HAVING AVG(c.id) > 1
 }}}
 
+
+Usege with entitymanager
+
+
+{{{
+ $query= $this->em->createQuery("SELECT count from blog b");
+ $query->execute();
+ $blogs = $query->getResultList();
+}}}
+
 The SQL functions
+
+
 {{{
 SELECT count(b.id) from Blog b
 }}}
 Usege with entitymanager
+
+
 {{{
  $query= $this->em->createQuery("SELECT count(b.id) from bir b");
  $query->execute();
@@ -41,6 +56,7 @@ Usege with entitymanager
 }}}
 
 <b>Sub Queryes</b>
+
 {{{
 SELECT b FROM Blog b WHERE b.coment.id =(SELECT MAX(c.id) FROM  Comment c)
 }}}
