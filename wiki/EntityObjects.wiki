@@ -1,6 +1,7 @@
 	
-Entity objects extends the Entity class
-class properties is indicated by annotation
+Entity objects extends the Entity class.
+
+class properties is indicated by annotation.
 
 Sample
 
