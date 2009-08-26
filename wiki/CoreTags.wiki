@@ -42,3 +42,15 @@ parameters var ,begin, to,step
 </c:for>
 }}}
 Out 1,2,3,4,5,6,7,9,10
+
+
+<b>foreach tag<b> 	
+parameters var ,begin, to,step
+ sample forech
+{{{
+<c:foreach var="{$this.list}" item="$item">
+  <br/>
+  İKi name :<c:out value="{$item.name}"/>
+  İKi id :<c:out value="{$item.id}"/>
+  </c:foreach>
+}}}
