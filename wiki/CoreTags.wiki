@@ -35,7 +35,7 @@ parameters test
 
 <b>for tag<b> 	
 parameters var ,begin, to,step
- sample elseif
+ sample for
 {{{
 <c:for var="$i" begin="1" to="10" step="1">
 <c:out value="{$i}"/>
