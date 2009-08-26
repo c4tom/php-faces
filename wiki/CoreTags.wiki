@@ -32,3 +32,13 @@ parameters test
 </c:elseif>
 </c:if>
 }}}
+
+<b>for tag<b> 	
+parameters var ,begin, to,step
+ sample elseif
+{{{
+<c:for var="$i" begin="1" to="10" step="1">
+<c:out value="{$i}"/>
+</c:for>
+}}}
+Out 1,2,3,4,5,6,7,9,10
