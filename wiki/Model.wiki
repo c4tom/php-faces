@@ -1,0 +1,42 @@
+Models are PHP classes that are designed to work with information in your database
+This layer provides a built-in support PHPFaces ORM
+
+As a simple example for PHPFaces Orm
+{{{
+<?php
+/**
+* @Table(name = "blog")
+*/
+class Blog extends Entity
+{
+/**
+@Id
+@Generated
+@Column(name = "id" ,type = "integer")
+*/
+private $id;
+
+/**
+@Column(name = "name" ,type = "string")
+*/
+private $name;
+
+/**
+@Column(name = "content" ,type = "text")
+*/
+private $content;
+
+public function set($name, $value) {
+$this->$name= $value;
+}
+public function get($name) {
+return $this->$name;
+}
+
+public function __toString() {
+return $this->name;
+}
+}
+
+?>
+}}}
