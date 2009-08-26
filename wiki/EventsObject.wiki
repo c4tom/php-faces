@@ -1,5 +1,3 @@
-Event Object 
-  
 {{{
 	
        
@@ -11,6 +9,23 @@ $Event->getRequestEvent();  // trigger gives the HTTP status post,request etc.
 
 Events 
 ActionEvent (component is clicked) ActionListener works with
+
+Methods 
+{{{public function actionPerformed(ActionEvent $event);}}}
+MouseEvent  (component is mouse events) MouseListener works with
+Methods
+{{{
+public function mouseOver(MouseEvent $event);
+public function mouseOut(MouseEvent $event);
+public function mouseDown(MouseEvent $event);
+public function mouseUp(MouseEvent $event);
+public function mousedbClick(MouseEvent $event);
+}}}
+ValueChangedEvent (value is changed)
+Methods
+{{{
+public function valueChanged(ValueChangedEvent $event);
+}}}
 
 sample Action event
 The Controller
