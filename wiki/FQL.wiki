@@ -1,0 +1,41 @@
+FQL(Faces Query Language)
+select statement
+
+{{{
+SELECT alias name FROM class name alias name where havig etc..
+}}}
+Samples
+{{{
+SELECT b from Blog b
+}}}
+
+{{{
+SELECT c from Categories c
+}}}
+
+{{{
+SELECT b from Blog b WHERE bi.id = 1
+}}}
+
+{{{
+SELECT b from Blog b WHERE bi.id = 1 and b.name='www'
+}}}
+
+{{{
+SELECT b from Blog b limit 0,5
+}}}
+
+{{{
+SELECT c from Categories c  GROUP BY c.id HAVING AVG(c.id) > 1
+}}}
+
+The SQL functions
+{{{
+SELECT count(b.id) from Blog b
+}}}
+Usege with entitymanager
+{{{
+ $query= $this->em->createQuery("SELECT count(b.id) from bir b");
+ $query->execute();
+ echo "count =" .$query->getSingle()."<br>";
+}}}
