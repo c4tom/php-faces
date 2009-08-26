@@ -31,6 +31,7 @@ EntityManager::find(string cllassname,integer premarykey)
 $entity= EntityManager::getInstance()->find("Entity",id);
 }}}
 createQuery
+parameter FQL
 {{{
 $em=  EntityManager::getInstance();
 $query =  $em->createQuery("select b from Bir b where b.id =:id");
@@ -42,6 +43,8 @@ print_r($query->getResultList())
 
 
 nativeQuery
+	
+parameter SQL
 {{{
 $em=  EntityManager::getInstance();
 $query =  $em->createQuery("select * from bir");
