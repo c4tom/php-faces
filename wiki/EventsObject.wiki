@@ -11,8 +11,11 @@ Events
 ActionEvent (component is clicked) ActionListener works with
 
 Methods 
-{{{public function actionPerformed(ActionEvent $event);}}}
+{{{
+public function actionPerformed(ActionEvent $event);
+}}}
 MouseEvent  (component is mouse events) MouseListener works with
+
 Methods
 {{{
 public function mouseOver(MouseEvent $event);
@@ -22,6 +25,7 @@ public function mouseUp(MouseEvent $event);
 public function mousedbClick(MouseEvent $event);
 }}}
 ValueChangedEvent (value is changed)
+
 Methods
 {{{
 public function valueChanged(ValueChangedEvent $event);
