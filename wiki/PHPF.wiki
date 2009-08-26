@@ -10,7 +10,7 @@ Action application/x-httpd-phpf www.yourhost.com/system/phpf.php
 import("phpf.controllers.Facescontroller");
 import("phpf.events.ActionEvent");
 import("phpf.listeners.ActionListener");
-define("BASE_URL","http://localhost/phpFaces/web/");
+define("BASE_URL","www.yourhost.com/");
 class Fform extends FacesController implements ActionListener
 {
     function Fform()
