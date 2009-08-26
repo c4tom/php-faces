@@ -1,9 +1,8 @@
-
 phpf.ui.*
 {{{
 <f:button>
-<f:label">
-<f:checkbox">
+<f:label>
+<f:checkbox>
 <f:form>
 <f:combobox>
 <f:hidden>
@@ -12,7 +11,9 @@ phpf.ui.*
 <f:textbox>
 }}}
 phpf.ui.sql.*
-{{{<sql:sql>}}}
+{{{
+<sql:sql>
+}}}
 phpf.ui.widget.*
 {{{
 <w:accordion>
