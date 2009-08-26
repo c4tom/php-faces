@@ -35,7 +35,7 @@ Usege with entitymanager
 
 
 {{{
- $query= $this->em->createQuery("SELECT count from blog b");
+ $query= $this->em->createQuery("SELECT b from Blog b WHERE b.comement.id >1");
  $query->execute();
  $blogs = $query->getResultList();
 }}}
