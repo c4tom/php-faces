@@ -1,12 +1,22 @@
 Use core tags
 <@import prefix="c" taglib="phpf.core" type="static"/>
 
+<b>out tag<b> 	
+parameters value
+ sample out
+{{{
+<c:out value="hi all"/>
+See this code makes
+echo "hi all"
+}}}
+
+
 <b>if tag<b> 	
 parameters test
  sample if
 {{{
 <c:if test="{$name=='bora'}">
-<c:out value={$name}/>
+<c:out value="{$name}"/>
 </c:if>
 }}}
 
