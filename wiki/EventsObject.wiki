@@ -3,8 +3,8 @@ Event Object
 {{{
 	
        
-       $Event->getComponent();// trigger gives the component
-       $Event->getRequestEvent();  // trigger gives the HTTP status post,request etc.
+$Event->getComponent();// trigger gives the component
+$Event->getRequestEvent();  // trigger gives the HTTP status post,request etc.
      
 }}}
 
@@ -46,7 +46,7 @@ The view.phpf
     <body>
         <faces>
             <@import prefix="face" taglib="phpf.ui.button"/>
-            <face:button name="b1" onclick="actionevent" text="Click Me"/>
+            <face:button name="btn" onclick="actionevent" text="Click Me"/>
         </faces>
     </body>
 </html>
