@@ -50,7 +50,7 @@ parameters var, item
 {{{
 <c:foreach var="{$this.list}" item="$item">
   <br/>
-  İKi name :<c:out value="{$item.name}"/>
-  İKi id :<c:out value="{$item.id}"/>
+   Name :<c:out value="{$item.name}"/>
+   Id :<c:out value="{$item.id}"/>
   </c:foreach>
 }}}
