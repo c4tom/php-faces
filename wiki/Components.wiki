@@ -1,4 +1,6 @@
+
 phpf.ui.*
+{{{
 <f:button>
 <f:label">
 <f:checkbox">
@@ -8,9 +10,11 @@ phpf.ui.*
 <f:textarea>
 <f:image>
 <f:textbox>
+}}}
 phpf.ui.sql.*
-<sql:sql>
+{{{<sql:sql>}}}
 phpf.ui.widget.*
+{{{
 <w:accordion>
 <w:accordionpane>
 <w:djtextbox>
@@ -25,3 +29,4 @@ phpf.ui.widget.*
 <w:djgird>
 <w:editor>
 <w:djchekbox>
+}}}
