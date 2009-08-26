@@ -18,9 +18,9 @@ The Controller
 import("phpf.controllers.Facescontroller");
 import("phpf.events.ActionEvent");
 import("phpf.listeners.ActionListener");
-class Simpleeventajax extends FacesController implements ActionListener
+class Sample extends FacesController implements ActionListener
 {
-    function Simpleeventajax()
+    function Sample()
     {
         parent::FacesController();
         $this->addActionListener($this);
