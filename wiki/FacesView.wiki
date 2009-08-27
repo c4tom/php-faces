@@ -109,3 +109,28 @@ Example
 it is used
 <@htag pattern="html"/>
 }}}
+
+
+
+<b>@face Tag</b>	
+include  a faces file
+Example
+
+
+{{{
+<@face file="footer.phpf"/>
+<@face file="banner.html"/>
+<@face file="patterns.phpf"/>
+}}}
+
+
+<b>@include Tag</b>	
+include  a php file
+Example
+
+
+{{{
+<@include file="functions.php"/>
+<@include file="helper.php"/>
+<@include file="view.php"/>
+}}}
