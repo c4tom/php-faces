@@ -14,9 +14,9 @@
 
 Sample
 {{{
-import("phpf.controllers.Facescontroller");
-import("phpf.events.ActionEvent");
-import("phpf.listeners.ActionListener");
+import("phpf.controllers.facescontroller");
+import("phpf.events.actionevent");
+import("phpf.listeners.actionlistener");
 class Simpleevent extends FacesController implements ActionListener
 {
     function Simpleevent()
@@ -24,6 +24,9 @@ class Simpleevent extends FacesController implements ActionListener
         parent::FacesController();
         $this->addActionListener($this);
         $this->render("event.phpf");
+        $this->load("server.session")
+        if($this->session->get("login"))
+        echo "You login";
     }
     public function actionPerformed(ActionEvent $evt)
     {
