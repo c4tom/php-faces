@@ -74,11 +74,49 @@ function startTag() {
 }}}
 
 use in view
+{{{
+<faces>
+<@import prefix="my" taglib="mypath.strong"/>
+<my:strong name="test" size="10" face="Arial">
+some text
+</my:strong>
+</faces>
+}}}
+
+@Items 
+
+
+Sample
+{{{
+import("phpf.ui.component");
+class Strong extends Component
+{
+  function Strong(FacesController &$controller,$args=null)
+    {
+        parent::Component($controller,$args);
+       
+    }
+   function startTag() {
+        $html = '<strong>'.'<font color="'.$this->attributes[color].
+       '" size="'.$this->attributes[size].'">' ;
+          foreach($this->items as $item)
+          $html.= '<a href="'.$item[url].'">'.$item[title].'</a>';          
+        return $html;
+    }
+   function endTag() {
+        return '</font></strong>';
+    }
+}
+}}}
+
+
 use in view
 {{{
 <faces>
 <@import prefix="my" taglib="mypath.strong"/>
 <my:strong name="test" size="10" face="Arial">
+<@item url="http://www.google.com" title="google"/>
+<@item url="http://www.webmahsulleri.com" title="WebMahsulleri"/>
 some text
 </my:strong>
 </faces>
