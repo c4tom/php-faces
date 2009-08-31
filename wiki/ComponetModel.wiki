@@ -97,8 +97,7 @@ class Strong extends Component
        
     }
    function startTag() {
-        $html = '<strong>'.'<font color="'.$this->attributes[color].
-       '" size="'.$this->attributes[size].'">' ;
+         $html = '<strong>'.'<font' $this->doAttributes() .'>' ;
           foreach($this->items as $item)
           $html.= '<a href="'.$item[url].'">'.$item[title].'</a>';          
         return $html;
