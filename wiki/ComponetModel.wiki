@@ -67,7 +67,7 @@ using doAttributes method
 
 {{{
 function startTag() {
-        $html = '<strong>'.'<font' $this->doAttributes() .'>' ;
+        $html = '<strong>'.'<font'. $this->doAttributes() .'>' ;
         return $html;
     }
 
@@ -97,9 +97,9 @@ class Strong extends Component
        
     }
    function startTag() {
-         $html = '<strong>'.'<font' $this->doAttributes() .'>' ;
+         $html = '<strong>'.'<font'. $this->doAttributes() .'>' ;
           foreach($this->items as $item)
-          $html.= '<a href="'.$item[url].'">'.$item[title].'</a>';          
+          $html.= '<br/><a href="'.$item[url].'">'.$item[title].'</a>';          
         return $html;
     }
    function endTag() {
