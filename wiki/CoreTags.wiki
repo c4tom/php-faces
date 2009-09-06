@@ -15,18 +15,18 @@ echo "hi all"
 parameters test
  sample if
 {{{
-<c:if test="{$name=='bora'}">
-<c:out value="{$name}"/>
+<c:if test="#{$name=='bora'}">
+<c:out value="#{$name}"/>
 </c:if>
 }}}
 
 <b>else tag<b> 	
  sample else
 {{{
-<c:if test="{$name=='bora'}">
-<c:out value="{$name}"/>
+<c:if test="#{$name=='bora'}">
+<c:out value="#{$name}"/>
 <c:else>
-<c:out value="other name {$name}"/>
+<c:out value="other name #{$name}"/>
 </c:else>
 </c:if>
 }}}
@@ -35,9 +35,9 @@ parameters test
 parameters test
  sample elseif
 {{{
-<c:if test="{$name=='bora'}">
-<c:out value="{$name}"/>
-<c:elseif test={$name=='obama'}>
+<c:if test="#{$name=='bora'}">
+<c:out value="#{$name}"/>
+<c:elseif test=#{$name=='obama'}>
 <c:out value="name obama"/>
 </c:elseif>
 </c:if>
@@ -48,7 +48,7 @@ parameters var ,begin, to,step
  sample for
 {{{
 <c:for var="$i" begin="1" to="10" step="1">
-<c:out value="{$i}"/>
+<c:out value="#{$i}"/>
 </c:for>
 }}}
 Out 1,2,3,4,5,6,7,9,10
@@ -58,9 +58,9 @@ Out 1,2,3,4,5,6,7,9,10
 parameters var, item
  sample forech
 {{{
-<c:foreach var="{$this.list}" item="$item">
+<c:foreach var="$this.list" item="$item">
   <br/>
-   Name :<c:out value="{$item.name}"/>
-   Id :<c:out value="{$item.id}"/>
+   Name :<c:out value="#{$item.name}"/>
+   Id :<c:out value="#{$item.id}"/>
   </c:foreach>
 }}}
