@@ -37,7 +37,7 @@ parameters test
 {{{
 <c:if test="#{$name=='bora'}">
 <c:out value="#{$name}"/>
-<c:elseif test=#{$name=='obama'}>
+<c:elseif test="#{$name=='obama'}">
 <c:out value="name obama"/>
 </c:elseif>
 </c:if>
