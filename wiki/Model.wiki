@@ -49,7 +49,7 @@ Insert,Update And Delete
 import("phpf.controllers.Facescontroller");
 import("phpf.events.ActionEvent");
 import("phpf.listeners.ActionListener");
-import("dbf.orm");
+import("dbf.persistence");
 import("entityes.Blog",true);
 class Sampleblog extends FacesController implements ActionListener
 {
