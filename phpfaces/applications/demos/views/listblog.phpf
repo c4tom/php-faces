@@ -1,0 +1,34 @@
+﻿<!-- 
+Document   : Event
+Created on : 15.Mar.2009, 05:19:06
+Author     : Bora
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+        <title>Add Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    </head>
+
+    <body >
+    
+        <faces>
+            <@import prefix="f" taglib="phpf.ui.grid"/>
+             <@import prefix="f" taglib="phpf.ui.label"/>
+            <font color="red">
+            <f:label name="message"></f:label>
+            </font>
+            <a href="#{$base_url}sampleblog/add" > Add new Blog</a>
+            <f:grid name="grid" height="50%" width="50%" bind="$this.blogs" border="1">
+                <@item   key="id"  title="Id" />
+                <@item   key="name" title="Blog Name"/>
+                <@item  input="link" title="Edit"  url="#{$base_url}sampleblog/edit/$id" type="path"/>
+                <@item  input="link" title="Delete"  url="#{$base_url}sampleblog/delete/$id" type="path"/>
+            </f:grid>
+     
+        </faces>
+    </body>
+</html>

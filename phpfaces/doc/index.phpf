@@ -1,0 +1,158 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <script>
+    
+        function iframeurl(obj)
+        {
+
+            //alert(obj.title);
+            document.getElementById("ifr").src= obj.title;
+            document.title= obj.value;
+
+        }
+    </script>
+    <style type="text/css">
+        @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+        @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <style>
+
+        .l .dijitButtonNode
+        {
+
+            width: 190px !important;
+        }
+        .lHover .dijitButtonNode {
+            color:#243C5F;
+            background:#acc5e2 url("images/buttonHover.png") repeat-x top left;
+            cursor:pointer;
+        }
+
+        .lActive .dijitButtonNode {
+
+            border-color:#657c9c;
+            background: #91b4e5 url("images/buttonActive.png") top left repeat-x;
+        }
+    </style>
+    <body class="soria" >
+
+        <table width="100%" height="99%" border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td  style="width: 200px; " valign="top" >
+
+                    <faces>
+                        <@import prefix="d" taglib="phpf.ui.widget.*"/>
+                        <@pattern name="link" prefix="d" extends="djbutton"  baseClass="l" onClick="iframeurl(this)"/>
+                        <d:accordion name="acor" duration="300"
+                                     style="margin-right: 30px; width: 200px; height:550px ; overflow: hidden" >
+
+                            <d:accordionpane name="start" title="Introduction">
+                                <center>
+                                    <@ui name="b1" pattern="link" text="Installation" title="#{$base_url}doc/start/install.html"/>
+                                    <@ui name="b3" pattern="link" text="MVC" title="#{$base_url}doc/start/mvc.html"/>
+                                    <@ui name="b4" pattern="link" text="Controllers" title="#{$base_url}doc/start/controllers.html"/>
+                                    <@ui name="b5" pattern="link" text="Views" title="#{$base_url}doc/start/view.htm"/>
+									<@ui name="model" pattern="link" text="Model" title="#{$base_url}doc/start/model.htm"/>
+                                    <@ui name="com" pattern="link" text="Components" title="#{$base_url}doc/start/components.htm"/>
+									<@ui name="fc" pattern="link" text="Faces Controller" title="#{$base_url}doc/start/facescontroller.html"/>
+								    <@ui name="fv" pattern="link" text="Faces View" title="#{$base_url}doc/start/facesview.html"/>
+                                    <@ui name="ex" pattern="link" text="Expressions" title="#{$base_url}doc/start/ex.htm"/>
+									<@ui name="evt1" pattern="link" text="Events And Listeners" title="#{$base_url}doc/start/listeners.html"/>
+									 <@ui name="cm" pattern="link" text="Faces Component Model" title="#{$base_url}doc/start/componentmodel.html"/>
+									 <@ui name="dw" pattern="link" text="Download" title="http://code.google.com/p/php-faces/downloads/list"/>
+								</center>
+                            </d:accordionpane>                                                   
+
+                            <d:accordionpane name="p3" title="Faces ORM Model" >
+                              <center>
+                              <@ui name="mapp" pattern="link" text="Entity Objects And Mapping" title="#{$base_url}doc/orm/mapping.html"/>
+                                <@ui name="em" pattern="link" text="Entity Manager" title="#{$base_url}doc/orm/em.html"/>
+                            <@ui name="fql" pattern="link" text="FQL" title="#{$base_url}doc/orm/fql.html"/>
+                           </center>
+                           </d:accordionpane>
+                            <d:accordionpane name="directives" title="Renderer Directives">
+                                <center>
+                                    <@ui name="b7" pattern="link" text="@import" title="#{$base_url}doc/directives/import.html"/>
+                                    <@ui name="b8" pattern="link" text="@definition" title="#{$base_url}doc/directives/definition.html"/>
+                                    <@ui name="b9" pattern="link" text="@set" title="#{$base_url}doc/directives/setandget.html"/>
+                                    <@ui name="b9a" pattern="link" text="@get" title="#{$base_url}doc/directives/setandget.html"/>
+                                    <@ui name="b10" pattern="link" text="@item" title="#{$base_url}doc/directives/item.html"/>
+                                    <@ui name="b11" pattern="link" text="@pattern" title="#{$base_url}doc/directives/pattern.html"/>
+                                    <@ui name="b11a" pattern="link" text="@ui" title="#{$base_url}doc/directives/pattern.html"/>
+                                    <@ui name="b12" pattern="link" text="@htmlpattern" title="#{$base_url}doc/directives/hpattern.html"/>
+                                    <@ui name="b12a" pattern="link" text="@html" title="#{$base_url}doc/directives/hpattern.html"/>
+                                    <@ui name="b13" pattern="link" text="@face" title="#{$base_url}doc/directives/face.html"/>
+                                    <@ui name="b14" pattern="link" text="@include" title="#{$base_url}doc/directives/include.html"/>
+                                </center>
+                            </d:accordionpane>
+
+                            <d:accordionpane name="core" title="Core Tags" align="center">
+                                <center>
+                                    <@ui name="b15" pattern="link" text="c:out" title="#{$base_url}doc/core/out.html"/>
+                                    <@ui name="b17" pattern="link" text="c:if" title="#{$base_url}doc/core/if.html"/>
+                                    <@ui name="b18" pattern="link" text="c:else" title="#{$base_url}doc/core/else.html"/>
+                                    <@ui name="b19" pattern="link" text="c:elseif" title="#{$base_url}doc/core/elseif.html"/>
+                                    <@ui name="b20" pattern="link" text="c:for" title="#{$base_url}doc/core/for.html"/>
+                                    <@ui name="b21" pattern="link" text="c:foreach" title="#{$base_url}doc/core/foreach.html"/>
+
+                                </center>
+                            </d:accordionpane>
+
+                            
+                            <d:accordionpane name="ui" title="HTML UI">
+                               <center>
+                               <@ui name="b22" pattern="link" text="Button" title="#{$base_url}doc/html/hbutton.phpf"/>
+                                <@ui name="b23" pattern="link" text="Textbox" title="#{$base_url}doc/html/htextbox.phpf"/>
+                                <@ui name="b24" pattern="link" text="Label" title="#{$base_url}doc/html/hlabel.phpf"/>
+                                <@ui name="b25" pattern="link" text="CheckBox" title="#{$base_url}doc/html/hcheckbox.phpf"/>
+                                <@ui name="b26" pattern="link" text="Image" title="#{$base_url}doc/html/himage.phpf"/>
+                                <@ui name="b27" pattern="link" text="ComboBox" title="#{$base_url}doc/html/hcombo.phpf"/>
+                                <@ui name="b28" pattern="link" text="Form" title="#{$base_url}doc/html/fform.phpf"/>
+                                <@ui name="b29" pattern="link" text="Gird" title="#{$base_url}doc/html/hgrid.phpf"/>
+                                <@ui name="b30" pattern="link" text="Hidden" title="#{$base_url}doc/html/hgrid.phpf"/>
+                                <@ui name="b31" pattern="link" text="Radio" title="#{$base_url}doc/html/hcheckbox.phpf"/>
+</center>  </center>
+                            </d:accordionpane>
+                            <d:accordionpane name="widget" title="Widgets UI">
+							  <center>
+                                <@ui name="b32" pattern="link" text="DJButton" title="#{$base_url}doc/widget/wbutton.phpf"/>
+								<@ui name="b33" pattern="link" text="DJTextBox" title="#{$base_url}doc/widget/wtextbox.phpf"/>
+								<@ui name="b34" pattern="link" text="Currency Text" title="#{$base_url}doc/widget/ctextbox.phpf"/>
+                               <@ui name="b35" pattern="link" text="Validation Text" title="#{$base_url}doc/widget/vtextbox.phpf"/>
+							 <@ui name="b366" pattern="link" text="NumberTextBox " title="#{$base_url}doc/widget/wnumber.phpf"/>
+							   <@ui name="b36" pattern="link" text="Number Spinner " title="#{$base_url}doc/widget/wnumbers.phpf"/>
+						   <@ui name="b37" pattern="link" text="DJComboBox " title="#{$base_url}doc/widget/wcombo.phpf"/>
+						   <@ui name="b38" pattern="link" text="Date Box " title="#{$base_url}doc/widget/wdatetext.phpf"/>
+						   <@ui name="b39" pattern="link" text="DJTextArea " title="#{$base_url}doc/widget/wtextarea.phpf"/>
+						   <@ui name="b40" pattern="link" text="DJCheckBox " title="#{$base_url}doc/widget/wcheckbox.phpf"/>
+						   <@ui name="b41" pattern="link" text="RadioGroup " title="#{$base_url}doc/widget/wradio.phpf"/>
+						   <@ui name="b42" pattern="link" text="Tab & TabPane " title="#{$base_url}doc/widget/w/wtab.phpf"/>
+						     <@ui name="b43" pattern="link" text="Accordion" title="#{$base_url}doc/widget/w/waccor.phpf"/>
+							 <@ui name="b45" pattern="link" text="Editor" title="#{$base_url}doc/widget/w/weditor.phpf"/>
+							<@ui name="b46" pattern="link" text="Themes" title="#{$base_url}doc/widget/Themes.html"/>
+                            </center>
+							</d:accordionpane>
+
+                        </d:accordion>
+                    </faces>
+                </td>
+                <td valign="top">
+
+                    <iframe src="http://code.google.com/p/php-faces/" width="99%" height="99%" frameborder="0" vspace="0" hspace="0" allowtransparency="true" style="border:0px;" scrolling="auto" name="ifr" id="ifr">
+
+                    </iframe>
+
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>

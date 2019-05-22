@@ -1,0 +1,782 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="mapping_dosyalar/filelist.xml">
+<title>component model </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Admin</o:Author>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>195</o:TotalTime>
+  <o:Created>2009-09-01T03:01:00Z</o:Created>
+  <o:LastSaved>2009-09-01T03:34:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>499</o:Words>
+  <o:Characters>2848</o:Characters>
+  <o:Lines>23</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3341</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.75pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR link="#0000CC" vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><b><span style='font-family:Arial'>Entity Objects</span></b><span
+style='font-size:10.0pt;font-family:Arial'> &nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:Arial'>Entity objects extends the Entity
+class. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:Arial'>class properties is indicated by
+annotation. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Courier New"'>mapping a class</span><span style='font-size:
+10.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:Arial'>Annotations <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#880000;letter-spacing:
+-.75pt'>@Table(name = &quot;blog&quot;)<span style='mso-spacerun:yes'>  </span></span><span
+style='font-family:"Courier New"'>table definitions</span><span
+style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>Name
+: tablename</p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#880000;letter-spacing:
+-.75pt'><br>
+@Column(name = &quot;name&quot; ,type = &quot;string&quot;) </span><span
+style='font-family:"Courier New"'>field definitions<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Courier New"'>Name :field name <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Courier New"'>Type : Type</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#880000;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:black;
+letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#880000;
+letter-spacing:-.75pt'>@Id </span><span style='font-family:"Courier New"'>Defining
+the primary key<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-family:"Courier New"'>Relation mappings<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:10.0pt;color:black'>&nbsp; </span><span style='font-size:10.0pt;
+color:#880000'>/**<br>
+&nbsp; &nbsp; @OneToOne(mappedBy =
+&quot;Comment&quot;,pk=&quot;commentid&quot;,fk=&quot;blogid&quot;)<br>
+&nbsp; &nbsp;*/</span><span style='font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal>@OneToOne</p>
+
+<p class=MsoNormal>@OneToMany </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>mappedBy = &quot;Class Name&quot;</p>
+
+<p class=MsoNormal>pk = &quot;<span style='font-family:"Courier New"'> primary
+key</span> &quot;</p>
+
+<p class=MsoNormal>fk = &quot;<span style='font-family:"Courier New"'> foreign
+key</span>&quot;<span style='font-size:10.0pt;color:black'><br>
+</span><span style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal>Samples</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>CREATE TABLE </span><span
+style='font-size:10.0pt;color:#008800'>`blog`</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#666600'>(</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; </span><span style='font-size:10.0pt;
+color:#008800'>`id`</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#000088'>int</span><span style='font-size:10.0pt;
+color:#666600'>(</span><span style='font-size:10.0pt;color:#006666'>11</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> NOT NULL auto_increment</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:black'><![endif]><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; </span><span style='font-size:10.0pt;
+color:#008800'>`name`</span><span style='font-size:10.0pt;color:black'> varchar</span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#006666'>255</span><span style='font-size:10.0pt;color:#666600'>)</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>default</span><span style='font-size:10.0pt;color:black'> NULL</span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:black'><![endif]><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; </span><span style='font-size:10.0pt;
+color:#008800'>`content`</span><span style='font-size:10.0pt;color:black'> text</span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:black'><![endif]><o:p></o:p></span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; PRIMARY KEY &nbsp;</span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>`id`</span><span style='font-size:10.0pt;color:#666600'>)</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'><![endif]><o:p></o:p></span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp;CREATE TABLE </span><span
+style='font-size:10.0pt;color:#008800'><span style='mso-spacerun:yes'> </span>comment`</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>(</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#008800'>`comentid`</span><span style='font-size:
+10.0pt;color:black'> INT NOT NULL AUTO_INCREMENT PRIMARY KEY </span><span
+style='font-size:10.0pt;color:#666600'>,</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#008800'>`content`</span><span style='font-size:
+10.0pt;color:black'> TEXT NOT NULL </span><span style='font-size:10.0pt;
+color:#666600'>,</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#008800'>`blogid`</span><span style='font-size:
+10.0pt;color:black'> INT NOT NULL<![endif]><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp;* &nbsp;@Table(name = &quot;blog&quot;)<br>
+&nbsp;*/</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>class</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>Blog</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>extends</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>Entity</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:Arial'>Add Columns <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp;* &nbsp;@Table(name = &quot;blog&quot;)<br>
+&nbsp;*/</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>class</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>Blog</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>extends</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>Entity</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp; &nbsp; &nbsp;@Column(name = &quot;name&quot; ,type = &quot;string&quot;)<br>
+&nbsp; &nbsp; &nbsp;*/</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>private</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $name</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+<br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#880000;
+letter-spacing:-.75pt'>/**<br>
+&nbsp; &nbsp; @Id<br>
+&nbsp; &nbsp; @Generated<br>
+&nbsp; &nbsp; @Column(name = &quot;id&quot; ,type = &quot;integer&quot;)<br>
+&nbsp; &nbsp; */</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>private</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $id</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+<br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:Arial'>Setters and Getters <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>class</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>Blog</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>extends</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>Entity</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp; &nbsp; @Id<br>
+&nbsp; &nbsp; @Generated<br>
+&nbsp; &nbsp; @Column(name = &quot;id&quot; ,type = &quot;integer&quot;)<br>
+&nbsp; &nbsp; */</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>private</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $id</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+<br>
+&nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp; &nbsp; &nbsp;@Column(name = &quot;name&quot; ,type = &quot;string&quot;)<br>
+&nbsp; &nbsp; &nbsp;*/</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>private</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $name</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; <br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>/**<br>
+&nbsp; &nbsp; &nbsp;@Column(name = &quot;content&quot; ,type =
+&quot;text&quot;)<br>
+&nbsp; &nbsp;*/</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>private</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $content</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+<br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>function</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>set</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>$name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>,</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $value</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>)</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>{</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $this</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>-&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'>$name</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>=</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> $value</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>function</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>get</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>$name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>)</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>return</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $this</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>-&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'>$name</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:"Courier New"'>Relational<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-family:"Courier New"'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'><o:p>&nbsp;</o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#880000'>/**</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#880000'>&nbsp;* &nbsp;@Table(name = &quot;blog&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span style='font-size:
+10.0pt;color:#000088'><o:p></o:p></span></pre>
+<pre style='border:none;
+mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#000088'>class</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>Blog</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>extends</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#660066'>Entity</span><span
+style='font-size:10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span style='font-size:10.0pt;
+color:#880000'>/**<br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'> @Id<br style='mso-special-character:
+line-break'> </span><span
+style='font-size:10.0pt;color:#880000'>@Column(name = &quot;id&quot; ,type = &quot;integer&quot;)<br
+style='mso-special-character:line-break'><![endif]><o:p></o:p></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $id</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>&nbsp;</span><span
+style='font-size:10.0pt;color:#880000'>/**<br style='mso-special-character:
+line-break'></span><span
+style='font-size:10.0pt;color:#880000'> @Column(name = &quot;name&quot; ,type = &quot;string&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $name</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>/**<br style='mso-special-character:
+line-break'></span><span
+style='font-size:10.0pt;color:#880000'>@Column(name = &quot;content&quot; ,type = &quot;text&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $content</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span style='font-size:10.0pt;
+color:#880000'>/**<br style='mso-special-character:line-break'> </span><span
+style='font-size:10.0pt;color:#880000'>@OneToMany(mappedBy = &quot;Comment&quot;,pk=&quot;id&quot;,fk=&quot;blogid&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $comments</span><span style='font-size:10.0pt;color:#666600'>;//ArrayObject<o:p></o:p></span></pre>
+<pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>function</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>Blog</span><span style='font-size:10.0pt;color:#666600'>(){</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>parent</span><span
+style='font-size:10.0pt;color:#666600'>::</span><span style='font-size:10.0pt;
+color:#660066'>Entity</span><span style='font-size:10.0pt;color:#666600'>();</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>$this</span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>comments</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>new</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#660066'>ArrayObject</span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>public</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#000088'>function</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>set</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:black'> $value</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>$this</span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>$name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> $value</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>public</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#000088'>function</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>get</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>)</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>return</span><span style='font-size:
+10.0pt;color:black'> $this</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt'><o:p></o:p></span></pre>
+</div>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#880000'>/**<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>* &nbsp;@Table(name = &quot;comment&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span style='font-size:
+10.0pt;color:#000088'><o:p></o:p></span></pre>
+<pre style='border:none;
+mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#000088'>class</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>Comment</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>extends</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#660066'>Entity</span><span style='font-size:
+10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span style='font-size:10.0pt;
+color:#880000'>/**<br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>@Id<br style='mso-special-character:
+line-break'></span><span
+style='font-size:10.0pt;color:#880000'>@Column(name = &quot;commentid&quot; ,type = &quot;integer&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $id</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>/**<br style='mso-special-character:
+line-break'></span><span
+style='font-size:10.0pt;color:#880000'>@Column(name = &quot;content&quot; ,type = &quot;text&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>private</span><span style='font-size:
+10.0pt;color:black'> $content</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span style='font-size:10.0pt;
+color:#880000'>/**<br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>* @Column(name = &quot;blogid&quot;,type =&quot;INT&quot;)</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#880000'>* @OneToOne(mappedBy = &quot;blog&quot;, pk= &quot;id&quot;, fk= &quot;blogid&quot;)<br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#880000'>*/</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span style='font-size:10.0pt;
+color:#000088'>private</span><span style='font-size:10.0pt;color:black'> &nbsp; $blogid</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>public</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#000088'>function</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>set</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:black'> $value</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>$this</span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>$name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> $value</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>public</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#000088'>function</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>get</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>)</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;
+color:black'><br style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#000088'>return</span><span style='font-size:
+10.0pt;color:black'> $this</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:#666600'>}</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-spacerun:yes'>  </span>Usage Controller</p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;color:#000088'>import</span><span style='font-size:
+10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;color:#008800'>&quot;phpf.controllers.facescontroller&quot;</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>import</span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;dbf.orm&quot;</span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>import</span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;models.*&quot;</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:#000088'>true</span><span
+style='font-size:10.0pt;color:#666600'>);//your application directory</span><span
+style='font-size:10.0pt;color:black'><br>
+<br>
+</span><span style='font-size:10.0pt;color:#000088'>class</span> <span style='font-size:10.0pt;
+color:#660066'>Blogtest</span> <span
+style='font-size:10.0pt;color:#000088'>extends</span> <span style='font-size:10.0pt;color:#660066'>FacesController</span><span
+style='font-size:10.0pt;color:black'> <br>
+</span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp;&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>public</span> <span style='font-size:10.0pt;
+color:#000088'>function</span><span style='font-size:10.0pt;color:black'> <span
+style='mso-spacerun:yes'> </span></span><span style='font-size:10.0pt;
+color:#660066'>Blogtest</span><span style='font-size:10.0pt;color:#666600'> ()</span> <span style='font-size:10.0pt;
+color:#666600'>{</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; parent</span><span style='font-size:10.0pt;
+color:#666600'>::</span><span style='font-size:10.0pt;color:#660066'>FacesController</span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $blog </span><span style='font-size:10.0pt;
+color:#666600'>=</span> <span
+style='font-size:10.0pt;color:#000088'>new</span> <span style='font-size:10.0pt;color:#660066'>Blog</span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $blog</span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span style='font-size:10.0pt;color:black'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;Hello World&quot;</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $blog</span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span style='font-size:10.0pt;color:black'>content</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;Some text&quot;</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $comment </span><span style='font-size:10.0pt;
+color:#666600'>=</span> <span
+style='font-size:10.0pt;color:#000088'>new</span> <span style='font-size:10.0pt;color:#660066'>Comment</span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $comment</span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span style='font-size:10.0pt;color:black'>content</span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;New
+Comment&quot;</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $blog</span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span style='font-size:10.0pt;color:black'>comments</span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>append</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$comment</span><span style='font-size:
+10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $em</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> &nbsp; </span><span style='font-size:
+10.0pt;color:#660066'>EntityManager</span><span style='font-size:10.0pt;
+color:#666600'>::</span><span style='font-size:10.0pt;color:black'>getInstance</span><span
+style='font-size:10.0pt;color:#666600'>()-&gt;</span><span style='font-size:
+10.0pt;color:black'>save</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$blog</span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#660066'>Echo</span> <span style='font-size:10.0pt;
+color:#008800'>&quot;Saved &quot;;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><a href="file:///C|/wamp/www/phpFaces/web/faces/orm/em.html">em</a><br>
+</span><span style='font-size:10.0pt;color:#666600'>}</span></p>
+
+</div>
+
+</body>
+
+</html>

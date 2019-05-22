@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>@import Tag taglib: a directory and classname prefix tag namespace </title>
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	letter-spacing:-.75pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=TR link="#0000CC" vlink=purple>
+
+<div class=Section1>
+
+<p><b><span style='font-size:10.0pt;font-family:Arial'>@item Tag</span></b><span
+style='font-size:10.0pt;font-family:Arial'> add an item a component </span></p>
+
+<p><span style='font-size:10.0pt;font-family:Arial'>each item can have its own
+specific features</span></p>
+
+<div style='border:none;border-left:solid #CCCCCC 2.25pt;padding:0in 0in 0in 6.0pt;
+margin-left:24.0pt;margin-right:0in'><pre style='border:none;padding:0in'><span
+style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp;</span><span
+style='font-size:10.0pt;color:#000088'>&lt;sql:sql</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;sql&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>var</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;results&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>query</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;select * from table where id=:id&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;@item id=&quot;{$id}&quot; type=&quot;integer&quot;/&gt;<br>
+&nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;/sql:sql&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+<br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;com:grid</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;girdx&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>height</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;100&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>width</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;50&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>bind</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;$this.birler&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>border</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;1&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp;&lt;@item &nbsp;input=&quot;text&quot; title=&quot;id&quot; key=&quot;id&quot; /&gt;<br>
+&nbsp;&lt;@item &nbsp;input=&quot;button&quot; key=&quot;name&quot; title=&quot;name&quot;/&gt;<br>
+&nbsp;&lt;@item &nbsp;input=&quot;link&quot; title=&quot;delete&quot; &nbsp;url=&quot;delete/$id/$name/$id&quot; type=&quot;path&quot; separator=&quot;_&quot;/&gt;<br>
+&nbsp;&lt;@item &nbsp;input=&quot;link&quot; title=&quot;edit&quot; &nbsp;url=&quot;delete.php?id=$id&amp;name=$name&quot;/&gt;<br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/com:grid&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

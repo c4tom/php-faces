@@ -1,0 +1,13 @@
+<?php
+import("phpf.controllers.Facescontroller");
+class Hlabel extends FacesController 
+{
+protected $name="Bora";
+    function Hlabel()
+    {
+        parent::FacesController();
+		$this->render(ApplicationContext::getCurrentView());
+        
+    } 
+}
+?>

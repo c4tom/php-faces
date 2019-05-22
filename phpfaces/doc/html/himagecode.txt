@@ -1,0 +1,25 @@
+<?php
+import("phpf.controllers.Facescontroller");
+import("phpf.events.ActionEvent");
+import("phpf.listeners.ActionListener");
+class Himage extends FacesController implements ActionListener
+{
+    function Himage()
+    {
+        parent::FacesController();
+        $this->addActionListener($this);
+        $this->render(ApplicationContext::getCurrentView());
+    }
+    public function actionPerformed(ActionEvent $evt)
+    {       
+             $this->image->setSource(BASE_URL."faces/html/".$this->btn->getText());
+			 
+			 if($pic=="orangefaces.png")
+			  $this->btn->setText("bluefaces.png");
+			 else
+			 $this->btn->setText("orangefaces.png");
+            
+			$this->AjaxResponse();
+    }
+}
+?>

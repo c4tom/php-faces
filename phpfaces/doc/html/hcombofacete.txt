@@ -1,0 +1,16 @@
+<?php
+import("phpf.controllers.facete");
+class Hcombo extends Facete
+{
+    function Hcombo()
+    {
+        parent::Facete();
+        $this->render(ApplicationContext::getCurrentView());
+    }
+    protected function comboChanged($evt) 
+    { 
+            $this->label->setText($this->combo->getSelected());
+			$this->AjaxResponse();     
+    }
+}
+?>

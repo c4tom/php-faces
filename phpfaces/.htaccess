@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|themes|css|js|video_files|robots\.txt|favicon\.ico)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$|index.php$ index.php/$1 [L]
+#RewriteRule ^[^/]*\.html$ index.php
+
+Options +ExecCGI
+AddType application/x-httpd-php .phpf s
+AddHandler  application/x-httpd-phpx .phpf
+Action application/x-httpd-phpx /phpfaces/phpfaces/system/phpf.php

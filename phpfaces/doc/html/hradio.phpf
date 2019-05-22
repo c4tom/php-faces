@@ -1,0 +1,44 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+<@import prefix="f" taglib="phpf.ui.radio"/>
+<@import prefix="f" taglib="phpf.ui.label"/>
+<d:tab name="tab" style="width:750x;height:100%">
+ <d:tabpane name="tab1" title="CheckBox">
+	who is <f:radio name="check" onclick="ajaxevent" />
+
+	</br>
+	<b>Cheked :
+	<f:label name="label"></f:label>
+	</b>
+	</br>
+	 <?php echo htmlspecialchars('who is <f:checkbox name="check" onclick="ajaxevent"/>');?>
+ </d:tabpane>
+   <d:tabpane name="tab4"  title="Faces View" >
+   <pre>
+   <?php echo htmlspecialchars( file_get_contents($base_url ."doc/html/hcheckboxview.txt"));?>
+   <pre>
+ </d:tabpane>
+  <d:tabpane name="tab5"     title="Controller" >
+   <?php echo highlight_string( file_get_contents($base_url ."doc/html/hcheckboxcode.txt"),true);?>
+ </d:tabpane>
+
+ </d:tab>
+      </faces>
+    </body>
+	
+</html>

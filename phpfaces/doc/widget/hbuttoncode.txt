@@ -1,0 +1,19 @@
+<?php
+import("phpf.controllers.Facescontroller");
+import("phpf.events.ActionEvent");
+import("phpf.listeners.ActionListener");
+class Hbutton extends FacesController implements ActionListener
+{
+    function Hbutton()
+    {
+        parent::FacesController();
+        $this->addActionListener($this);
+        $this->render(ApplicationContext::getCurrentView());
+    }
+    public function actionPerformed(ActionEvent $evt)
+    {
+        $evt->getComponent()->setText("You Cliked");
+         $this->AjaxResponse();
+    }
+}
+?>

@@ -1,0 +1,612 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="facesview_dosyalar/filelist.xml">
+<title>component model </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Admin</o:Author>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2009-08-31T02:28:00Z</o:Created>
+  <o:LastSaved>2009-08-31T03:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>349</o:Words>
+  <o:Characters>1990</o:Characters>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2335</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.75pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR link="#0000CC" vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:Arial'>FacesView</span></b></span><span
+style='font-size:10.0pt;font-family:Arial'> &nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>import</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>taglib</span>: a <span class=SpellE>directory</span>
+<span class=SpellE>and</span> <span class=SpellE>classname</span> <span
+class=SpellE>prefix</span> <span class=SpellE>tag</span> <span class=SpellE>namespace</span>
+<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>import</span> <span
+class=SpellE>prefix</span>=&quot;c&quot; <span class=SpellE>taglib</span>=&quot;<span
+class=SpellE><span class=GramE>phpf</span></span><span class=GramE>.<span
+class=SpellE>core</span></span>&quot; <span class=SpellE>type</span>=&quot;<span
+class=SpellE>static</span>&quot;/&gt;<br>
+<span class=SpellE>this</span> <span class=SpellE>tag</span> <span
+class=SpellE>call</span> <span class=SpellE>static</span> <span class=SpellE>methods</span>
+<br>
+<br>
+&lt;@<span class=SpellE>import</span> <span class=SpellE>prefix</span>=&quot;<span
+class=SpellE>face</span>&quot; <span class=SpellE>taglib</span>=&quot;<span
+class=SpellE>phpf</span>.<span class=SpellE>ui</span>.*&quot;/&gt;<br>
+<span class=SpellE>this</span> <span class=SpellE>tag</span> <span
+class=SpellE>import</span> <span class=SpellE>components</span><br>
+it is <span class=SpellE>used</span><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;<span class=SpellE>face</span>:<span class=SpellE>button</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>btn</span>&quot;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;<span class=SpellE>face</span>:<span class=SpellE>textbox</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>txtbox</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>/&gt;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;<span class=SpellE>face</span>:<span class=SpellE>label</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>lbl</span>&quot;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;c:<span class=SpellE>if</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>test</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;$a==0&quot;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;c:<span class=SpellE>out</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>value</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>zero</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&gt;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;c:else&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;c:<span class=SpellE>out</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>value</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;not <span class=SpellE>zero</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&gt;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;/c:else&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;/c:<span class=SpellE>if</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>definition</span>
+<span class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;
+font-family:Arial'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span class=GramE><span style='font-size:10.0pt;font-family:Arial'>viewstate</span></span></span><span
+class=GramE><span style='font-size:10.0pt;font-family:Arial'> : <span
+class=SpellE>true</span></span></span><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>or</span> <span class=SpellE>false</span>, <span
+class=SpellE>uses</span> a <span class=SpellE>storage</span> <span
+class=SpellE>area</span> <span class=SpellE>for</span> <span class=SpellE>components</span>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span class=GramE><span style='font-size:10.0pt;font-family:Arial'>stroge</span></span></span><span
+class=GramE><span style='font-size:10.0pt;font-family:Arial'> : <span
+class=SpellE>xhtml</span></span></span><span style='font-size:10.0pt;
+font-family:Arial'> <span class=SpellE>or</span> <span class=SpellE>session</span>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span class=GramE><span style='font-size:10.0pt;font-family:Arial'>eventvalidation</span></span></span><span
+class=GramE><span style='font-size:10.0pt;font-family:Arial'> : <span
+class=SpellE>true</span></span></span><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>or</span> <span class=SpellE>false</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>definition</span> <span
+class=SpellE>viewstate</span>=&quot;<span class=SpellE>true</span>&quot; <span
+class=SpellE>stroge</span>=&quot;<span class=SpellE>xhtml</span>&quot;/&gt;<br>
+&lt;@<span class=SpellE>definition</span> <span class=SpellE>eventvalidation</span>=&quot;<span
+class=SpellE>true</span>&quot;/&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@set <span class=SpellE>Tag</span></span></b><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>create</span> a <span
+class=SpellE>varible</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@set name=&quot;bora&quot; <span
+class=SpellE>scope</span>=&quot;<span class=SpellE>session</span>&quot;/&gt;<br>
+<br>
+&lt;@set <span class=SpellE>number</span>=&quot;111&quot; <span class=SpellE>scope</span>=&quot;<span
+class=SpellE>page</span>&quot;/&gt;<br>
+<span class=SpellE>See</span> <span class=SpellE>this</span> <span
+class=SpellE>code</span> <span class=SpellE>makes</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>$_SESSION</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>[</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;name&quot;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>]=</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;bora&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>var</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'> $<span class=SpellE>number</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#006666;letter-spacing:-.75pt'>111</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>;</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>get</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>get</span> a <span class=SpellE>varible</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>get</span>
+var=&quot;<span class=SpellE>thename</span>&quot; <span class=SpellE>select</span>=&quot;name&quot;
+<span class=SpellE>scope</span>=&quot;<span class=SpellE>session</span>&quot;/&gt;<br>
+<span class=SpellE>See</span> <span class=SpellE>this</span> <span
+class=SpellE>code</span> <span class=SpellE>makes</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span class=GramE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>var</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>thename</span> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $_SESSION</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>[</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;name&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>];</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>item</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>add</span> an <span class=SpellE>item</span> a <span
+class=SpellE>component</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&nbsp; &nbsp; &nbsp;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&lt;<span class=SpellE>sql</span>:<span class=SpellE>sql</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>sql</span>&quot;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>var</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>=</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;<span
+class=SpellE>results</span>&quot;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>query</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>select</span> * <span class=SpellE>from</span>
+<span class=SpellE>table</span> <span class=SpellE>where</span> id=:id&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&gt;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;@<span class=SpellE>item</span>
+id=&quot;{$id}&quot; <span class=SpellE>type</span>=&quot;<span class=SpellE>integer</span>&quot;/&gt;<br>
+&nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;/<span class=SpellE>sql</span>:<span
+class=SpellE>sql</span>&gt;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'><br>
+<br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;com:<span class=SpellE>grid</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>girdx</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>height</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;100&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>width</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;50&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>bind</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;$<span class=SpellE>this</span>.birler&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>border</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;1&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&gt;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp;&lt;@<span class=SpellE>item</span> &nbsp;<span class=SpellE>input</span>=&quot;<span
+class=SpellE>text</span>&quot; <span class=SpellE>title</span>=&quot;id&quot; <span
+class=SpellE>key</span>=&quot;id&quot; /&gt;<br>
+&nbsp;&lt;@<span class=SpellE>item</span> &nbsp;<span class=SpellE>input</span>=&quot;<span
+class=SpellE>button</span>&quot; <span class=SpellE>key</span>=&quot;name&quot;
+<span class=SpellE>title</span>=&quot;name&quot;/&gt;<br>
+&nbsp;&lt;@<span class=SpellE>item</span> &nbsp;<span class=SpellE>input</span>=&quot;<span
+class=GramE>link</span>&quot; <span class=SpellE>title</span>=&quot;<span
+class=SpellE>delete</span>&quot; &nbsp;<span class=SpellE>url</span>=&quot;<span
+class=SpellE>delete</span>/$id/$name/$id&quot; <span class=SpellE>type</span>=&quot;<span
+class=SpellE>path</span>&quot; <span class=SpellE>separator</span>=&quot;_&quot;/&gt;<br>
+&nbsp;&lt;@<span class=SpellE>item</span> &nbsp;<span class=SpellE>input</span>=&quot;link&quot;
+<span class=SpellE>title</span>=&quot;<span class=SpellE>edit</span>&quot;
+&nbsp;<span class=SpellE>url</span>=&quot;<span class=SpellE>delete</span>.<span
+class=SpellE>php</span>?id=$id&amp;name=$name&quot;/&gt;<br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;/com:<span class=SpellE>grid</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>pattern</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>creates</span> a <span class=SpellE>template</span> <span
+class=SpellE>for</span> <span class=SpellE>ui</span> <span class=SpellE>components</span>
+<span class=SpellE>and</span> <b>&lt;@<span class=SpellE>ui</span>&gt;</b> is <span
+class=SpellE>used</span> <span class=SpellE>with</span> <span class=SpellE>Example</span>
+<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>pattern</span>
+name=&quot;<span class=SpellE>mytag</span>&quot;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>prefix</span>=&quot;f&quot;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>extends</span>=&quot;<span
+class=SpellE>button</span>&quot;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>text</span>=&quot;<span
+class=SpellE>My</span> <span class=SpellE>text</span>&quot;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>style</span>=&quot;<span
+class=SpellE><span class=GramE>color</span></span><span class=GramE>:<span
+class=SpellE>navy</span></span>;font-<span class=SpellE>weight</span>:<span
+class=SpellE>bold</span>;&quot; <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>onclick</span>=&quot;<span
+class=SpellE>ajaxevent</span>&quot;/&gt;<br>
+it is <span class=SpellE>used</span><br>
+&nbsp;&lt;@<span class=SpellE>ui</span> name=&quot;mytag1&quot; <span
+class=SpellE>pattern</span>=&quot;<span class=SpellE>mytag</span>&quot;/&gt;<br>
+&nbsp;&lt;@<span class=SpellE>ui</span> name=&quot;mytag2&quot; <span
+class=SpellE>pattern</span>=&quot;<span class=SpellE>mytag</span>&quot;/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>htmlpattern</span>
+<span class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;
+font-family:Arial'> <span class=SpellE>creates</span> a <span class=SpellE>template</span>
+<span class=SpellE>for</span> html <span class=SpellE>and</span> <b>&lt;@html&gt;</b>
+is <span class=SpellE>used</span> <span class=SpellE>with</span> <span
+class=SpellE>Example</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>htmlpattern</span>
+name=&quot;html&quot;&gt;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;<span
+class=SpellE>div</span></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>style</span></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>=</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;</span><span
+class=SpellE><span class=GramE><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>color</span></span></span><span class=GramE><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>:</span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'>red</span></span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>font</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>-</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>weight</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>:</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>bold</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> test html <span class=SpellE>pattern</span>{$i} </span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#000088;letter-spacing:
+-.75pt'>&lt;/<span class=SpellE>div</span>&gt;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/@<span class=SpellE>htmlpattern</span>&gt;<br>
+it is <span class=SpellE>used</span><br>
+&lt;@html <span class=SpellE>pattern</span>=&quot;html&quot;/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>face</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>include</span> a <span class=SpellE>faces</span>
+file <span class=SpellE>Example</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>face</span>
+file=&quot;<span class=SpellE>footer</span>.<span class=SpellE>phpf</span>&quot;/&gt;<br>
+&lt;@<span class=SpellE>face</span> file=&quot;<span class=GramE>banner</span>.html&quot;/&gt;<br>
+&lt;@<span class=SpellE>face</span> file=&quot;<span class=SpellE>patterns</span>.<span
+class=SpellE>phpf</span>&quot;/&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>include</span> <span
+class=SpellE>Tag</span></span></b><span style='font-size:10.0pt;font-family:
+Arial'> <span class=SpellE>include</span> a <span class=SpellE>php</span> file <span
+class=SpellE>Example</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&lt;@<span class=SpellE>include</span>
+file=&quot;<span class=SpellE>functions</span>.<span class=SpellE>php</span>&quot;/&gt;<br>
+&lt;@<span class=SpellE>include</span> file=&quot;<span class=SpellE>helper</span>.<span
+class=SpellE>php</span>&quot;/&gt;<br>
+&lt;@<span class=SpellE>include</span> file=&quot;<span class=SpellE>view</span>.<span
+class=SpellE>php</span>&quot;/&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

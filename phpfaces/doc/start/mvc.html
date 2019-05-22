@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="docContent">
+  <div class="indent1">
+    <p><span class="glossary">Model-View-Controller (MVC)</span> is a classic design 
+      pattern often used by applications that need the ability to maintain multiple views 
+      of the same data. The MVC pattern hinges on a clean separation of objects into one of
+      three categories &#8212; <span class="glossary">models</span> for maintaining data, <span class="glossary">views</span> for displaying all or a portion of the data, and <span class="glossary">controllers</span> for handling events that affect the model 
+      or view(s).</p>
+    <p>Because of this separation, multiple views and controllers can interface 
+      with the same model. Even new types of views and controllers that never existed 
+      before can interface with a model without forcing a change in the model design.</p>
+  </div>
+  <p class="paraLeader">How It Works</p>
+  <div class="indent1">
+    <p>The MVC abstraction can be graphically represented as follows.</p>
+  </div>
+  <div align="center"><img src="mvc_dosyalar/mvc.gif" alt="mvc" width="370" height="248" border="0" /></div>
+  <div class="indent1">
+    <p>Events typically cause a controller to change a model, or view, or both. Whenever 
+      a controller changes a model&#8217;s data or properties, all dependent views are 
+      automatically updated. Similarly, whenever a controller changes a view, for example, 
+      by revealing areas that were previously hidden, the view gets data from the
+      underlying model to refresh itself.</p>
+  </div>
+  <p class="paraLeader">A Concrete Example</p>
+  <div class="indent1">
+    <p>We explain the MVC pattern with the help of a simple <span class="glossary">spinner</span> component which consists of a text 
+      field and two arrow buttons that can be used to increment or decrement a numeric 
+      value shown in the text field. We currently do not have an 
+      element type that can directly represent a spinner component, but it easy is to <a href="http://www.enode.com/x/markup/tutorial/spinner.html" name="spinner" id="spinner">synthesize a spinner</a> using existing element
+      types.</p>
+  </div>
+  <div align="center"><img src="mvc_dosyalar/spinnerMVC.gif" alt="mvc" width="222" height="115" border="0" /></div>
+  <div class="indent1">
+    <p>The spinner&#8217;s data is held in a <span class="glossary">model</span> that is <em>shared</em> with the text field. The text field provides a <span class="glossary">view</span> of the spinner&#8217;s current value. Each button 
+      in the spinner is an <span class="glossary">event source</span>, that spawns an <span class="glossary">action event</span> every time it is clicked.
+      The buttons can be hooked up to <a href="http://www.enode.com/x/markup/tutorial/action.html#trampoline">trampolines</a> that receive action events, and route them to an <span class="glossary">action listener</span> that eventually handles that event. Recall that
+      a trampoline is a predefined action listener that simply delegates action handling to
+      another listener.</p>
+    <p>Depending on the source of the event, the ultimate action listener either 
+      increments or decrements the value held in the model &#8212; The action listener is 
+      an example of a <span class="glossary">controller</span>.</p>
+    <p>The trampolines that initially receive the action events fired by the arrow 
+      buttons, are also controllers &#8212; However, instead of modifying the 
+      spinner&#8217;s model directly, they delegate the task to a separate controller 
+      (action listener).</p>
+  </div>
+  <p class="paraLeader">Multiple Controllers</p>
+  <div class="indent1">
+    <p>The MVC pattern allows any number of controllers to modify the same 
+      model. While we have so far focused only on the two arrow buttons as likely source of 
+      events, there is, in fact, a third event source in this example &#8212; Whenever the
+      text field has focus, hitting the <span class="glossary">enter</span> key fires off
+      an action event that may potentially be handled by a different action listener than 
+      the one handling action events from the buttons.</p>
+  </div>
+  <div align="center">
+    <div z-index="0" style="position: relative; width: 315px; height: 115px;">
+      <div z-index="1" style="position: absolute; top: 0pt; left: 93px; width: 222px; height: 115px;"><img src="mvc_dosyalar/spinnerMVC.gif" alt="mvc" width="222" height="115" border="0" /></div>
+      <div z-index="2" style="position: absolute; top: 15px; left: 0pt; width: 136px; height: 86px;"><img src="mvc_dosyalar/spinnerMVC2.gif" alt="mvc" width="136" height="86" border="0" /></div>
+    </div>
+    <p>Some parts of a component may use different controllers than others</p>
+  </div>
+</div>
+</body>
+</html>

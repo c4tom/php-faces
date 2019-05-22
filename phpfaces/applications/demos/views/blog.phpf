@@ -1,0 +1,56 @@
+﻿<!-- 
+Document   : blog
+Created on : 15.Mar.2009, 05:19:06
+Author     : Bora
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+
+        <title><?php echo $title?></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    </head>
+    <style type="text/css">
+        @import "<?php echo BASE_URL?>dojo/dijit/themes/tundra/tundra.css";
+        @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <script>
+        function postdata(evt)
+        {
+           dojo.byId('content').value = dijit.byId('editor').getValue();
+           actionPostForm("addform","savebtn",evt);
+        }
+    </script>
+    <body class="tundra">
+        <faces>
+            <@import prefix="f" taglib="phpf.ui.widget.*"/>
+            <@import prefix="f" taglib="phpf.ui.*"/>
+            <font color="red">
+            <f:label name="message"></f:label>
+            </font>
+            <a href="#{$base_url}sampleblog" > Return blog list</a>
+            <f:form name="addform" method="post" >
+                <table>
+                    <tr>
+                        <td> Blog Caption :</td>
+                        <td><f:djtextbox name="caption" required="true" bind="$this.blog.name"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> Content :</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <f:editor name="editor">#{$this.blog.content}</f:editor>
+                            <f:hidden name="content"/>
+                            <f:hidden name="blogid" value="#{$this.blog.id}"/>
+                        </td>
+                    </tr>
+                </table>
+            </f:form>
+            <f:djbutton name="savebtn"  text="save" onclick="postdata" iconClass="dijitEditorIcon dijitEditorIconSave"/>
+        </faces>
+    </body>
+</html>

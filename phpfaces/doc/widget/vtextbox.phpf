@@ -1,0 +1,87 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+<d:tab name="tab" style="width:750x;height:100%">
+ <d:tabpane name="tab1" title="ValidationText">
+<table>
+<tr>
+<td>E-Mail:</td>
+<td><d:validationtext name="mail" text="test@test.com" regExpGen="dojox.regexp.emailAddress" required="true"/></td>
+</tr>
+<tr>
+<td>User Name :</td>
+<td><d:validationtext name="username" required="true"
+  promptMessage="Enter user name."
+  trim="true"
+  lowercase="true"
+/>
+</td>
+</tr>
+<tr>
+<td>Zip Code :</td>
+<td><d:validationtext name="zipcode" required="true"
+  trim="true" 
+	  required="true" 
+	  regExp="\d{5}([\-]\d{4})?$" 
+	  maxlength="10" 
+	  promptMessage="Enter zip code." 
+	  invalidMessage="Invalid zip code (NNNNN) or (NNNNN-NNNN)." 
+/>
+</td>
+</tr>
+</table>
+
+</br>
+<span
+class=SpellE1>validationtext</span></span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;mail&quot;</span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>text</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;test@test.com&quot;</span><span style='font-size:10.0pt;
+color:black'> </span><span class=SpellE1><span style='font-size:10.0pt;
+color:#660066'>regExpGen</span></span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;<span class=SpellE1>dojox</span>.<span
+class=SpellE1>regexp</span>.<span class=SpellE1>emailAddress</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE1><span
+style='font-size:10.0pt;color:#660066'>required</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>true</span>&quot;</span><span
+style='font-size:10.0pt;color:#000088'>/&gt;
+</span>
+<br>
+regExpGen values:
+<p>dojox.regexp.emailAddress</p>
+<p>dojox.regexp.ipAddress</p>
+<p>dojox.regexp.url</p>
+<p>dojox.regexp.emailAddressList</p>
+<br> egExp attribute. your expersion
+<p>regExp="[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"</p>
+
+
+ </d:tabpane>
+   <d:tabpane name="tab4"  title="Faces View">
+   <?php echo file_get_contents("vtextboxview.htm");?>
+ </d:tabpane>
+ 
+
+ </d:tab>
+      </faces>
+    </body>
+	
+</html>

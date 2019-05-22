@@ -1,0 +1,33 @@
+﻿<!-- 
+Document   : Combo
+Created on : 15.Mar.2009, 05:19:06
+Author     : Bora
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <faces>
+            <@import prefix="face" taglib="phpf.ui.combobox"/>
+            <@import prefix="face" taglib="phpf.ui.label"/>
+            <b> Sample combobox and Data binding </b>
+            <hr>
+            <face:combobox name="combo" onchange="ajaxevent"
+             bind="array('One','Two','Three','Four','Five')">
+            </face:combobox>
+            <br>
+            <face:combobox name="list" onchange="ajaxevent"
+             bind="array(1,2,3,4,5,6,7,8,9)">
+            </face:combobox>
+            <br>
+            <b>
+                <face:label name="label" text="You select :"/>
+            </b>
+        </faces>
+    </body>
+</html>

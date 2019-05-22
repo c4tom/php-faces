@@ -1,0 +1,27 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+
+  <d:djgrid name="djgird"  bind="$this.datas"  style="width: 350px; height: 150px;">
+ <@item name="ID" field="id"  width="5" />
+ <@item  name="ÝSiml a" field="name" width="15"/>
+  </d:djgrid>
+	
+      </faces>
+    </body>
+	
+</html>

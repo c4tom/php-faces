@@ -1,0 +1,28 @@
+﻿<!-- 
+Document   : Button
+Created on : 15.Mar.2009, 05:19:06
+Author     : Bora
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<faces>
+    <html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <@import prefix="c" taglib="phpf.core" type="static"/>
+        <@import prefix="phpf" taglib="phpf.ui.*"/>
+        <@definition viewstate="true" stroge="xhtml"/>
+        <@definition eventvalidation="true" />
+    </head>
+    
+    <body>
+    <phpf:form   method="post" name="form">
+        What is your name ?
+        <phpf:textbox name="textbox"/>
+        <phpf:button name="button"   text="Set Name" onclick="actionevent" forname="form" />
+        <p><phpf:label name="label" /></p>
+    </phpf:form>
+</faces>
+</body>
+</html>

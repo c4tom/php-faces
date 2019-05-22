@@ -1,0 +1,57 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+<@import prefix="f" taglib="phpf.ui.*"/>
+<d:tab name="tab" style="width:750x;height:100%">
+ <d:tabpane name="tab1" title="CurrencyText">
+
+	 <d:currencytext name="ctext"  value="54775"  required="true"
+      currency="EUR"
+     invalidMessage="Invalid amount.  Include Euro sign." />
+	
+	
+	</br></br>
+&lt;w:currencytext</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;ctext&quot;</span><span
+style='font-size:10.0pt;color:black'> &nbsp;</span><span style='font-size:10.0pt;
+color:#660066'>value</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;54775&quot;</span><span
+style='font-size:10.0pt;color:black'> &nbsp;</span><span style='font-size:10.0pt;
+color:#660066'>required</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;true&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>currency</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;EUR&quot;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; </span><span style='font-size:10.0pt;color:#660066'>invalidMessage</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;Invalid amount. &nbsp;Include Euro sign.&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>/&gt;<o:p></o:p></span>
+ </d:tabpane>
+   <d:tabpane name="tab4"  title="Faces View">
+   <?php echo file_get_contents("ctextboxview.htm");?>
+ </d:tabpane>
+ 
+
+ </d:tab>
+      </faces>
+    </body>
+	
+</html>

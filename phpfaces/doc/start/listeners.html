@@ -1,0 +1,595 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="listeners_dosyalar/filelist.xml">
+<title>component model </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Admin</o:Author>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2009-08-31T02:28:00Z</o:Created>
+  <o:LastSaved>2009-09-01T03:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>287</o:Words>
+  <o:Characters>1642</o:Characters>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1926</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.75pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR link="#0000CC" vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:Arial'>Events</span></b></span><b><span
+style='font-family:Arial'> <span class=SpellE>And</span> <span class=SpellE>Listeners</span></span></b><span
+style='font-size:10.0pt;font-family:Arial'> &nbsp; <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>&nbsp; &nbsp; &nbsp; &nbsp; <br>
+&nbsp; &nbsp; &nbsp; &nbsp;<br>
+$<span class=SpellE>Event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>getComponent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>();</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#880000;letter-spacing:-.75pt'>// <span class=SpellE>trigger</span> <span
+class=SpellE>gives</span> <span class=SpellE>the</span> <span class=SpellE>component</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+$<span class=SpellE>Event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>getRequestEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>();</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'> &nbsp;</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#880000;letter-spacing:-.75pt'>// <span
+class=SpellE>trigger</span> <span class=SpellE>gives</span> <span class=SpellE>the</span>
+HTTP <span class=SpellE>status</span> post,<span class=SpellE>request</span> <span
+class=SpellE>etc</span>.</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Events</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>ActionEvent</span><a
+href="http://code.google.com/p/php-faces/w/edit/ActionEvent"><span
+style='mso-bidi-font-size:12.0pt'>?</span></a> (<span class=SpellE>component</span>
+is <span class=SpellE>clicked</span>) <span class=SpellE>ActionListener</span><a
+href="http://code.google.com/p/php-faces/w/edit/ActionListener"><span
+style='mso-bidi-font-size:12.0pt'>?</span></a> <span class=SpellE>works</span> <span
+class=SpellE>with</span> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Methods</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>actionPerformed</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>ActionEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:Arial'><a
+href="http://code.google.com/p/php-faces/w/edit/MouseEvent"><span
+style='mso-bidi-font-size:12.0pt'>?</span></a> (<span class=SpellE>component</span>
+is <span class=SpellE>mouse</span> <span class=SpellE>events</span>) <span
+class=SpellE>MouseListener</span><a
+href="http://code.google.com/p/php-faces/w/edit/MouseListener"><span
+style='mso-bidi-font-size:12.0pt'>?</span></a> <span class=SpellE>works</span> <span
+class=SpellE>with</span> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Methods</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>mouseOver</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>mouseOut</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>mouseDown</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>mouseUp</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>mousedbClick</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>MouseEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>ValueChangedEvent</span></span><span
+style='font-size:10.0pt;font-family:Arial'><a
+href="http://code.google.com/p/php-faces/w/edit/ValueChangedEvent"><span
+style='mso-bidi-font-size:12.0pt'>?</span></a> (<span class=SpellE>value</span>
+is <span class=SpellE>changed</span>) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Methods</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>valueChanged</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>(</span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>ValueChangedEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>event</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>sample</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>Action</span> <span
+class=SpellE>event</span> <span class=SpellE>The</span> <span class=SpellE>Controller</span>
+<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>import</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>phpf</span>.<span
+class=SpellE>controllers</span>.<span class=SpellE>Facescontroller</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>);</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>import</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>phpf</span>.<span
+class=SpellE>events</span>.<span class=SpellE>ActionEvent</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>);</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>import</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>phpf</span>.<span
+class=SpellE>listeners</span>.<span class=SpellE>ActionListener</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>);</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>class</span></span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>Sample</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>extends</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>FacesController</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>implements</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>ActionListener</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>Sample</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>()</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>parent</span></span><span
+class=GramE><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>FacesController</span></span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#666600;letter-spacing:-.75pt'>();</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>this</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'>addActionListener</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'>$<span class=SpellE>this</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>);</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>this</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'>render</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>view</span>.<span
+class=SpellE>phpf</span>&quot;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#666600;letter-spacing:-.75pt'>);</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>public</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>function</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> <span class=SpellE>actionPerformed</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>ActionEvent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> $<span class=SpellE>evt</span></span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>)</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>{</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>evt</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'>getComponent</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>()-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'>setText</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>(</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>You</span> <span
+class=SpellE>cliked</span> <span class=SpellE>me</span>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>);</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp;<br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#666600;
+letter-spacing:-.75pt'>}</span><span style='font-size:10.0pt;font-family:"Courier New";
+letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>The</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE><span
+class=GramE>view</span></span><span class=GramE>.<span class=SpellE>phpf</span></span>
+<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:
+0in 0in 0in 6.0pt'><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;html&gt;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;<span class=SpellE>head</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;<span class=SpellE>title</span>&gt;&lt;/<span
+class=SpellE>title</span>&gt;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;meta</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>http-<span class=SpellE>equiv</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>Content</span>-<span
+class=SpellE>Type</span>&quot;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:black;letter-spacing:-.75pt'> </span><span class=SpellE><span
+style='font-size:10.0pt;font-family:"Courier New";color:#660066;letter-spacing:
+-.75pt'>content</span></span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#666600;letter-spacing:-.75pt'>=</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;<span
+class=SpellE>text</span>/html; <span class=SpellE>charset</span>=<span
+class=GramE>UTF-8</span>&quot;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+<br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;/<span class=SpellE>head</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;body&gt;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;<span class=SpellE>faces</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;@<span class=SpellE>import</span>
+<span class=SpellE>prefix</span>=&quot;<span class=SpellE>face</span>&quot; <span
+class=SpellE>taglib</span>=&quot;<span class=SpellE>phpf</span>.<span
+class=SpellE>ui</span>.<span class=SpellE>button</span>&quot;/&gt;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;<span
+class=SpellE>face</span>:<span class=SpellE>button</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>name</span><span style='font-size:10.0pt;
+font-family:"Courier New";color:#666600;letter-spacing:-.75pt'>=</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#008800;letter-spacing:
+-.75pt'>&quot;<span class=SpellE>btn</span>&quot;</span><span style='font-size:
+10.0pt;font-family:"Courier New";color:black;letter-spacing:-.75pt'> </span><span
+class=SpellE><span style='font-size:10.0pt;font-family:"Courier New";
+color:#660066;letter-spacing:-.75pt'>onclick</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;</span><span class=SpellE><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'>actionevent</span></span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#008800;letter-spacing:-.75pt'>&quot;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'> </span><span class=SpellE><span style='font-size:10.0pt;font-family:
+"Courier New";color:#660066;letter-spacing:-.75pt'>text</span></span><span
+style='font-size:10.0pt;font-family:"Courier New";color:#666600;letter-spacing:
+-.75pt'>=</span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#008800;letter-spacing:-.75pt'>&quot;<span class=SpellE>Click</span> <span
+class=SpellE>Me</span>&quot;</span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>/&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:
+"Courier New";color:#000088;letter-spacing:-.75pt'>&lt;/<span class=SpellE>faces</span>&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;font-family:"Courier New";
+color:#000088;letter-spacing:-.75pt'>&lt;/body&gt;</span><span
+style='font-size:10.0pt;font-family:"Courier New";color:black;letter-spacing:
+-.75pt'><br>
+</span><span style='font-size:10.0pt;font-family:"Courier New";color:#000088;
+letter-spacing:-.75pt'>&lt;/html&gt;</span><span style='font-size:10.0pt;
+font-family:"Courier New";letter-spacing:-.75pt'><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,599 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="em_dosyalar/filelist.xml">
+<title>component model </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Admin</o:Author>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>13</o:Revision>
+  <o:TotalTime>191</o:TotalTime>
+  <o:Created>2009-08-31T02:28:00Z</o:Created>
+  <o:LastSaved>2009-09-01T03:49:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>313</o:Words>
+  <o:Characters>1789</o:Characters>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2098</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.75pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+.style1 {
+	font-size: 10.0pt;
+	color: black;
+}
+span.GramE1 {mso-style-name:"";
+	mso-gram-e:yes;}
+span.SpellE1 {mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE11 {mso-style-name:"";
+	mso-gram-e:yes;}
+span.SpellE11 {mso-style-name:"";
+	mso-spl-e:yes;}
+.style2 {
+	font-size: 10.0pt;
+	color: #660066;
+}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR link="#0000CC" vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span class=SpellE><b><span style='font-family:Arial'>EntityManager</span></b></span><span
+style='font-size:10.0pt;font-family:Arial'> &nbsp; <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>methods</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>save</span></span><span
+style='font-size:10.0pt;font-family:Arial'> insert <span class=SpellE>or</span>
+<span class=SpellE>update</span> an <span class=SpellE>object</span> <span
+class=SpellE>to</span> <span class=SpellE>database</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#660066'>EntityManager</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>save</span></span><span style='font-size:
+10.0pt;color:#666600'>(</span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Entity</span></span><span style='font-size:10.0pt;color:black'> $e</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>usage</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>blog</span> </span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>new</span></span><span style='font-size:
+10.0pt;color:black'> </span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Blog</span></span><span style='font-size:10.0pt;color:#666600'>();</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>blog</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;<span class=SpellE>Hello</span> <span
+class=SpellE>world</span>&quot;</span><span style='font-size:10.0pt;color:#666600'>;</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>blog</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>content</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>xxxx</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=SpellE><span style='font-size:10.0pt;color:#660066'>EntityManager</span></span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>::</span></span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>()-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>save</span></span><span style='font-size:
+10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>blog</span></span><span style='font-size:10.0pt;color:#666600'>);</span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>delete</span></span><span
+style='font-size:10.0pt;font-family:Arial'> an <span class=SpellE>object</span>
+<span class=SpellE>to</span> <span class=SpellE>database</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#660066'>EntityManager</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>delete</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Entity</span></span><span
+style='font-size:10.0pt;color:black'> $e</span><span style='font-size:10.0pt;
+color:#666600'>)</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>usage</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>$em </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> </span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>EntityManager</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>blog</span> </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> $em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>find</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>Blog</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:#006666'>2</span><span style='font-size:10.0pt;color:#666600'>);</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$em</span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>delete</span></span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>blog</span></span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>find</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <a
+href="http://code.google.com/p/php-faces/wiki/EntityManager"><span
+class=SpellE>EntityManager</span></a><span class=GramE>::</span><span
+class=SpellE>find</span>(<span class=SpellE>string</span> <span class=SpellE>cllassname</span>,<span
+class=SpellE>integer</span> <span class=SpellE>premarykey</span>) <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>entity</span></span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>EntityManager</span></span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>::</span></span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>()-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>find</span></span><span style='font-size:
+10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE>Entity</span>&quot;</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:black'>id</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>createQuery</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>parameter</span>
+<a href="http://code.google.com/p/php-faces/wiki/FQL">FQL</a> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>$em</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> &nbsp;</span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>EntityManager</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>query</span> </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> &nbsp;$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>createQuery</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>select</span> b <span class=SpellE>from</span> Bir b <span
+class=SpellE>where</span> b.id =:id&quot;</span><span style='font-size:10.0pt;
+color:#666600'>);</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$id</span><span style='font-size:10.0pt;
+color:#666600'>=</span><span style='font-size:10.0pt;color:#006666'>11</span><span
+style='font-size:10.0pt;color:#666600'>;</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>query</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>bindParam</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;id&quot;</span><span style='font-size:10.0pt;color:#666600'>,</span><span
+style='font-size:10.0pt;color:black'> $id</span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br
+style='mso-special-character:line-break'></span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>query</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>execute</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span></pre>
+<pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=SpellE><span style='font-size:10.0pt;color:black'>print</span></span><span
+style='font-size:10.0pt;color:black'>_r</span><span style='font-size:10.0pt;
+color:#666600'>(</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>query</span></span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>getResultList</span></span><span
+style='font-size:10.0pt;color:#666600'>())</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>nativeQuery</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>parameter</span>
+SQL <o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;color:black'>$em</span><span style='font-size:10.0pt;
+color:#666600'>=</span><span style='font-size:10.0pt;color:black'> &nbsp;</span><span
+class=SpellE><span style='font-size:10.0pt;color:#660066'>EntityManager</span></span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>::</span></span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+$<span class=SpellE>query</span> </span><span style='font-size:10.0pt;
+color:#666600'>=</span><span style='font-size:10.0pt;color:black'> &nbsp;$em</span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>createQuery</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>select</span> * <span class=SpellE>from</span>
+bir&quot;</span><span style='font-size:10.0pt;color:#666600'>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;color:#666600'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'> all other pdo methods</p>
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>&nbsp;</p>
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'>
+  <pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class="style2">beginTransaction();</span><span class="style2">
+commit(); 
+rollBack(); </span></pre>
+</div>
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'>&nbsp;</p>
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='mso-bidi-font-size:10.0pt'>Entity</span></span><span
+style='mso-bidi-font-size:10.0pt'> <span class=SpellE>Management</span> in <span
+class=SpellE>Entity's</span> <span class=SpellE>class</span><o:p></o:p>
+. Save and Delete methods 
+</span></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>class</span></span><span style='font-size:10.0pt;
+color:black'> </span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Comment</span></span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>extends</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Entity</span></span><span class=GramE><span style='font-size:10.0pt;color:#666600'>{</span></span><span
+style='font-size:10.0pt;color:black'><br></span><span style='font-size:10.0pt;color:#880000'>/**<br>@<span class=SpellE>Id</span><br>@<span class=SpellE>Column</span>(name = &quot;id&quot; ,<span
+class=SpellE>type</span> = &quot;<span class=SpellE>integer</span>&quot;)<br>*/</span><span style='font-size:10.0pt;color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>private</span></span><span style='font-size:10.0pt;color:black'> $id</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#880000'>/**<br>@<span class=SpellE>Column</span>(name = &quot;<span
+class=SpellE>content</span>&quot; ,<span class=SpellE>type</span> = &quot;<span
+class=SpellE>text</span>&quot;)<br>*/</span><span style='font-size:10.0pt;color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>private</span></span><span style='font-size:10.0pt;color:black'> $<span
+class=SpellE>content</span></span><span style='font-size:10.0pt;color:#666600'>;</span><span class="style1">
+</span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>public</span></span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#000088'>set</span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$name</span><span style='font-size:10.0pt;
+color:#666600'>,</span><span style='font-size:10.0pt;color:black'> $<span
+class=SpellE>value</span></span><span style='font-size:10.0pt;color:#666600'>)</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>{</span><span style='font-size:10.0pt;color:black'><br>$<span class=SpellE>this</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>$name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> $<span class=SpellE>value</span></span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>public</span></span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>get</span></span><span style='font-size:
+10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;color:black'>$name</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br></span><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>return</span></span><span style='font-size:10.0pt;
+color:black'> $<span class=SpellE>this</span></span><span style='font-size:
+10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;color:black'>$name</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>save</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>$em </span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Manager</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>beginTransaction</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>try</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>{</span><span style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>save</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>this</span></span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>commit</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>catch</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>(</span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Exception</span></span><span style='font-size:10.0pt;color:black'> $e</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>rollBack</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>delete</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>$em </span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Manager</span></span><span
+style='font-size:10.0pt;color:#666600'>::</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>getInstance</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>beginTransaction</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>try</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>{</span><span style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>delete</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>this</span></span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>commit</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>catch</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>(</span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Exception</span></span><span style='font-size:10.0pt;color:black'> $e</span><span
+style='font-size:10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>$em</span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>rollBack</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br></span><span style='font-size:10.0pt;color:#666600'>}}<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#666600'><o:p>&nbsp;</o:p></span></pre></div>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;</p>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+class=SpellE>Usage</span> <span class=SpellE>Controller</span>
+    <o:p></o:p>
+</p>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><u1:p><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>import</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>phpf</span>.<span class=SpellE>controllers</span>.<span
+class=SpellE>facescontroller</span>&quot;</span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>import</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>dbf</span>.<span class=SpellE>orm</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>import</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>models</span>.*&quot;</span><span
+style='font-size:10.0pt;color:#666600'>,</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>true</span></span><span
+style='font-size:10.0pt;color:#666600'>);//<span class=SpellE>your</span> <span
+class=SpellE>application</span> <span class=SpellE>directory</span></span><span
+style='font-size:10.0pt;color:black'><br>
+<br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>class</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Blogtest</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>extends</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>FacesController</span></span><span
+style='font-size:10.0pt;color:black'> <br>
+</span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp;&nbsp; &nbsp; </span><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>public</span></span><span style='font-size:10.0pt;
+color:black'> </span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>function</span></span><span style='font-size:10.0pt;color:black'>
+&nbsp;</span><span class=SpellE><span style='font-size:10.0pt;color:#660066'>Blogtest</span></span><span
+style='font-size:10.0pt;color:#666600'> ()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>parent</span></span><span
+style='font-size:10.0pt;color:#666600'>::</span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>FacesController</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>blog</span> </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> </span><span class=SpellE><span style='font-size:10.0pt;
+color:#000088'>new</span></span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE><span style='font-size:10.0pt;color:#660066'>Blog</span></span><span
+style='font-size:10.0pt;color:#666600'>();</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>blog</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+color:black'>name</span><span style='font-size:10.0pt;color:#666600'>=</span><span
+style='font-size:10.0pt;color:#008800'>&quot;<span class=SpellE>Hello</span> <span
+class=SpellE>World</span>&quot;</span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; $<span class=SpellE>blog</span></span><span
+style='font-size:10.0pt;color:#666600'>-&gt;</span><span class=SpellE><span
+style='font-size:10.0pt;color:black'>content</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>Some</span> <span class=SpellE>text</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+<span style='mso-spacerun:yes'>  </span><span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'>     </span>$<span class=SpellE>blog</span>-&gt;<span
+class=SpellE>save</span>();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span class=SpellE><span style='font-size:
+10.0pt;color:#660066'>Echo</span></span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE>Saved</span> &quot;;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#666600'>}</span><o:p></o:p></p>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='mso-bidi-font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

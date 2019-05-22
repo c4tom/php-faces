@@ -1,0 +1,151 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+<@import prefix="f" taglib="phpf.ui.*"/>
+<d:tab name="tab" style="width:750x;height:100%">
+ <d:tabpane name="tab1" title="NumberTextBox">
+	 <d:numbertextbox name="text" value="3000"
+                constraints="{min:-20000,max:20000,places:0}"
+                promptMessage= "Enter a value between -20000 and +20000"
+                required= "true"
+                invalidMessage= "Invalid elevation."/>
+	 
+
+	</br>
+&lt;f:<span
+class=SpellE1>numbertextbox</span></span> <span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>text</span>&quot;</span> <span class=SpellE1><span
+style='font-size:10.0pt;color:#660066'>value</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;3000&quot;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>constraints</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;{<span class=SpellE1>min</span>:-20000,<span class=SpellE1>max</span>:20000,<span
+class=SpellE1>places</span>:0}&quot;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>promptMessage</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>Enter</span> a <span class=SpellE1>value</span> <span class=SpellE1>between</span> -20000 <span
+class=SpellE1>and</span> +20000&quot;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>required</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>true</span>&quot;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>invalidMessage</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>Invalid</span> <span class=SpellE1>elevation</span>.&quot;</span><span
+style='font-size:10.0pt;color:#000088'>/&gt;</span>
+ </d:tabpane>
+   <d:tabpane name="tab4"  title="Faces View">
+   &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 <span
+class=SpellE1>Transitional</span>//EN&quot;&gt;</span><span style='font-size:
+10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;html&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE1>head</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE1>title</span>&gt;</span><span class=SpellE1><span style='font-size:
+10.0pt;color:black'>The</span></span><span style='font-size:10.0pt;color:black'> <span
+class=SpellE1>Button</span></span><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE1>title</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE1>style</span></span> <span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>type</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>text</span>/<span class=SpellE1>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:
+10.0pt;color:#006666'>@<span class=SpellE1>import</span></span> <span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>dojo</span>/dijit/<span class=SpellE1>themes</span>/<span
+class=SpellE1>soria</span>/<span class=SpellE1>soria</span>.<span class=SpellE1>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:
+10.0pt;color:#006666'>@<span class=SpellE1>import</span></span> <span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>dojo</span>/<span class=SpellE1>dojo</span>/1.0.0/<span
+class=SpellE1>dojo</span>/<span class=SpellE1>resources</span>/<span
+class=SpellE1>dojo</span>.<span class=SpellE1>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE1>style</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;meta</span> <span style='font-size:10.0pt;
+color:#660066'>http-<span class=SpellE1>equiv</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>Content</span>-<span class=SpellE1>Type</span>&quot;</span> <span class=SpellE1><span
+style='font-size:10.0pt;color:#660066'>content</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>text</span>/html; <span class=SpellE1>charset</span>=<span
+class=GramE1>UTF-8</span>&quot;</span><span style='font-size:10.0pt;color:#000088'>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE1>head</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;body&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;<span class=SpellE1>faces</span>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&lt;@<span class=SpellE1>import</span> <span class=SpellE1>prefix</span>=&quot;f&quot; <span
+class=SpellE1>taglib</span>=&quot;<span class=SpellE1>phpf</span>.<span
+class=SpellE1>ui</span>.<span class=SpellE1>widget</span>.<span class=SpellE1>numbertextbox</span>&quot;/&gt;<br>
+&nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;f:<span
+class=SpellE1>numbertextbox</span></span> <span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE1>text</span>&quot;</span> <span class=SpellE1><span
+style='font-size:10.0pt;color:#660066'>value</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;3000&quot;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>constraints</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;{<span class=SpellE1>min</span>:-20000,<span class=SpellE1>max</span>:20000,<span
+class=SpellE1>places</span>:0}&quot;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>promptMessage</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>Enter</span> a <span class=SpellE1>value</span> <span class=SpellE1>between</span> -20000 <span
+class=SpellE1>and</span> +20000&quot;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>required</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>true</span>&quot;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE1><span style='font-size:10.0pt;color:#660066'>invalidMessage</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span> <span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE1>Invalid</span> <span class=SpellE1>elevation</span>.&quot;</span><span
+style='font-size:10.0pt;color:#000088'>/&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/<span class=SpellE1>faces</span>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/body&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/html&gt;</span><span
+style='font-size:10.0pt'><o:p></o:p></span>
+ </d:tabpane>
+ </d:tab>
+      </faces>
+    </body>
+	
+</html>

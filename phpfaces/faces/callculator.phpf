@@ -1,0 +1,56 @@
+﻿<!-- 
+Document   : Callculator
+Created on : 15.Mar.2009, 05:19:06
+Author     : Huseyin Bora
+-->
+<faces>
+    <@import prefix="c" taglib="phpf.core" type="static"/>
+    <@import prefix="f" taglib="phpf.ui.*"/>
+    <@definition viewstate="true" stroge="xhtml"/>
+</faces>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Simple AJAX Callculator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <b> Simple Ajax Calcullator </b>
+        <faces>
+            <table width="200"  style="border:solid 1px;" >
+                <tr>
+                    <td colspan="3">
+                        <f:textbox name="resultbox" placeholder="true" style="font-weight:bold;color:#003366;" disabled="disabled"/>
+                    </td>
+                    <td>
+                    <f:button name="clear" text="C" onclick="ajaxevent" style="width:30px;"/></td>
+                </tr>
+                <tr>
+                    <td><f:button name="one" text="1" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="two" text="2" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="three" text="3" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="plus" text="+" onclick="ajaxevent" style="width:30px;"/></td>
+                </tr>
+                <tr>
+                    <td><f:button name="four" text="4" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="five" text="5" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="six" text="6" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="subtrac" text="-" onclick="ajaxevent" style="width:30px;"/></td>
+                </tr>
+                <tr>
+                    <td><f:button name="seven" text="7" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="eight" text="8" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="nine" text="9" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="div" text="/" onclick="ajaxevent" style="width:30px;"/></td>
+                </tr>
+                <tr>
+                    <td><f:button name="minus" text="+/-" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="dot" text="." onclick="ajaxevent" style="width:30px;font-weight:bold;"/></td>
+                    <td><f:button name="zero" text="0" onclick="ajaxevent" style="width:30px;"/></td>
+                    <td><f:button name="multiply" text="*" onclick="ajaxevent" style="width:30px;"/></td>
+                </tr>
+            </table>
+            <f:hidden name="store" text="0" placeholder="true"/>
+        </faces>
+    </body>
+</html>

@@ -1,0 +1,143 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <style type="text/css">
+         @import "<?php echo BASE_URL?>dojo/dijit/themes/soria/soria.css";
+         @import "<?php echo BASE_URL?>dojo/dojo/1.0.0/dojo/resources/dojo.css";
+    </style>
+    <body class="soria">
+<faces>
+<@import prefix="d" taglib="phpf.ui.widget.*"/>
+
+<d:tab name="tab" style="width:750x;height:100%">
+ <d:tabpane name="tab1" title="Display">
+	<d:djtextarea name="text"  style="width:300px">The Text  And name 
+	#{$this.name}
+	</d:djtextarea>
+	</br>
+	</br>
+	 &lt;f:<span
+class=SpellE>djtextarea</span></span><span style='font-size:10.0pt;color:black'>
+</span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>text</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>style</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>width</span></span><span style='font-size:10.0pt;color:#666600'>:</span><span
+style='font-size:10.0pt;color:#006666'>300px</span><span style='font-size:10.0pt;
+color:#008800'>&quot;</span><span style='font-size:10.0pt;color:#000088'>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>The</span> <span class=SpellE>Text</span>
+&nbsp;<span class=SpellE>And</span> name <br>
+&nbsp; &nbsp; &nbsp; &nbsp; #{$<span class=SpellE>this</span>.name}<br>
+&nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;/f:<span
+class=SpellE>djtextarea</span>&gt;</span>
+ </d:tabpane>
+   <d:tabpane name="tab4"  title="Faces View" >
+&lt;!DOCTYPE
+HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 <span class=SpellE>Transitional</span>//EN&quot;&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;html&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>head</span>&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>style</span></span><span style='font-size:10.0pt;color:black'> </span><span
+class=SpellE><span style='font-size:10.0pt;color:#660066'>type</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>text</span>/<span class=SpellE>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;
+color:#006666'>@<span class=SpellE>import</span></span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE>dojo</span>/dijit/<span class=SpellE>themes</span>/<span
+class=SpellE>soria</span>/<span class=SpellE>soria</span>.<span class=SpellE>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style='font-size:10.0pt;
+color:#006666'>@<span class=SpellE>import</span></span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE>dojo</span>/<span class=SpellE>dojo</span>/1.0.0/<span
+class=SpellE>dojo</span>/<span class=SpellE>resources</span>/<span
+class=SpellE>dojo</span>.<span class=SpellE>css</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+&nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE>style</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>title</span>&gt;</span><span class=SpellE><span style='font-size:
+10.0pt;color:black'>The</span></span><span style='font-size:10.0pt;color:black'>
+<span class=SpellE>Button</span></span><span style='font-size:10.0pt;
+color:#000088'>&lt;/<span class=SpellE>title</span>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;meta</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#660066'>http-<span class=SpellE>equiv</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>Content</span>-<span class=SpellE>Type</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>content</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>text</span>/html; <span class=SpellE>charset</span>=<span
+class=GramE>UTF-8</span>&quot;</span><span style='font-size:10.0pt;color:#000088'>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE>head</span>&gt;</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;body&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;<span class=SpellE>faces</span>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&lt;@<span class=SpellE>import</span> <span class=SpellE>prefix</span>=&quot;f&quot;
+<span class=SpellE>taglib</span>=&quot;<span class=SpellE>phpf</span>.<span
+class=SpellE>widget</span>.<span class=SpellE>djtextarea</span>&quot;/&gt;<br>
+&nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;f:<span
+class=SpellE>djtextarea</span></span><span style='font-size:10.0pt;color:black'>
+</span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>text</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>style</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>width</span></span><span style='font-size:10.0pt;color:#666600'>:</span><span
+style='font-size:10.0pt;color:#006666'>300px</span><span style='font-size:10.0pt;
+color:#008800'>&quot;</span><span style='font-size:10.0pt;color:#000088'>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class=SpellE>The</span> <span class=SpellE>Text</span>
+&nbsp;<span class=SpellE>And</span> name <br>
+&nbsp; &nbsp; &nbsp; &nbsp; #{$<span class=SpellE>this</span>.name}<br>
+&nbsp;</span><span style='font-size:10.0pt;color:#000088'>&lt;/f:<span
+class=SpellE>djtextarea</span>&gt;</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/<span class=SpellE>faces</span>&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+&nbsp; &nbsp; </span><span style='font-size:10.0pt;color:#000088'>&lt;/body&gt;</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#000088'>&lt;/html&gt;</span><span
+style='mso-bidi-font-size:10.0pt;border:none windowtext 1.0pt;mso-border-alt:
+none windowtext 0in;padding:0in'><o:p></o:p></span>
+</body>
+
+</html>
+
+ </d:tabpane>
+  <d:tabpane name="tab5"     title="Controller" >
+   <?php echo highlight_string( file_get_contents($base_url ."doc/html/htextboxcode.txt"),true);?>
+ </d:tabpane>
+
+ </d:tab>
+      </faces>
+    </body>
+	
+</html>

@@ -1,0 +1,656 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="componentmodel_dosyalar/filelist.xml">
+<title>component model </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Admin</o:Author>
+  <o:LastAuthor>Admin</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2009-08-31T02:28:00Z</o:Created>
+  <o:LastSaved>2009-08-31T03:14:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>318</o:Words>
+  <o:Characters>1813</o:Characters>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2127</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	letter-spacing:-.75pt;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normal Tablo";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=TR style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p><span class=SpellE><span style='font-size:24.0pt;font-family:Arial'>Component</span></span><span
+style='font-size:24.0pt;font-family:Arial'> model <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>your</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>class</span> <span
+class=SpellE>extended</span> <span class=SpellE>from</span> <span class=SpellE>the</span>
+<span class=SpellE>component</span> <o:p></o:p></span></p>
+
+<p><span class=SpellE><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;font-family:
+Arial'>Methods</span></i></b></span><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;font-family:
+Arial'> <o:p></o:p></span></i></b></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Construct</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>function</span> <span
+class=SpellE>construct</span>(<span class=SpellE>FacesController</span> &amp;$<span
+class=SpellE>controller</span>,$<span class=SpellE>args</span>=<span
+class=SpellE>null</span>) <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>String</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>startTag</span>($<span
+class=SpellE>bind</span>=<span class=SpellE>null</span>) <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>String</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>endTag</span>() <o:p></o:p></span></p>
+
+<p><span class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Simple</span></span><span
+style='font-size:10.0pt;font-family:Arial'> a <span class=SpellE>component</span>
+<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>import</span></span><span style='font-size:10.0pt;
+color:#666600'>(</span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE>phpf</span>.<span class=SpellE>ui</span>.<span class=SpellE>component</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>class</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>extends</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Component</span></span><span
+style='font-size:10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>FacesController</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>&amp;</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>controller</span></span><span style='font-size:10.0pt;color:#666600'>,</span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>args</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>null</span></span><span
+style='font-size:10.0pt;color:#666600'>){</span><span style='font-size:10.0pt;
+color:black'><br>
+<span class=SpellE>parent</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Component</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>controller</span></span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>args</span></span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>startTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><br>
+<span style='mso-spacerun:yes'>       </span></span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#008800'>'&lt;<span class=SpellE>strong</span>&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+<span style='mso-spacerun:yes'> </span></span><span style='font-size:10.0pt;
+color:#666600'>}</span><span style='font-size:10.0pt;color:black'><br>
+&nbsp;</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>endTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>{</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#008800'>'&lt;/<span class=SpellE>strong</span>&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><br>
+<span style='mso-spacerun:yes'>   </span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>}</span></span><span style='font-size:
+10.0pt;color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>use</span></span><span
+style='font-size:10.0pt;font-family:Arial'> in <span class=SpellE>view</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>faces</span>&gt;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&lt;@<span
+class=SpellE>import</span> <span class=SpellE>prefix</span>=&quot;<span
+class=SpellE>my</span>&quot; <span class=SpellE>taglib</span>=&quot;<span
+class=SpellE><span class=GramE>mypath</span></span><span class=GramE>.<span
+class=SpellE>strong</span></span>&quot;/&gt;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE><span class=GramE>my</span></span><span class=GramE>:<span
+class=SpellE>strong</span></span></span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;test&quot;</span><span style='font-size:10.0pt;color:#000088'>&gt;</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:black'>some</span></span><span style='font-size:10.0pt;color:black'> <span
+class=SpellE>text</span><o:p></o:p></span></pre><pre style='border:none;
+mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#000088'>&lt;/<span class=SpellE><span
+class=GramE>my</span></span><span class=GramE>:<span class=SpellE>strong</span></span>&gt;</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE>faces</span>&gt;</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><b><span style='font-size:10.0pt;font-family:Arial'>Attributes</span></b></span><b><span
+style='font-size:10.0pt;font-family:Arial'> of <span class=SpellE>your</span> <span
+class=SpellE>component</span></span></b><span style='font-size:10.0pt;
+font-family:Arial'> $<span class=SpellE>attributes</span> an <span
+class=SpellE>array</span> <o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Sample</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>import</span></span><span style='font-size:10.0pt;
+color:#666600'>(</span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE><span class=GramE>phpf</span></span><span class=GramE>.<span
+class=SpellE>ui</span></span>.<span class=SpellE>component</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>class</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>extends</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Component</span></span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>{</span></span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>FacesController</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>&amp;</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>controller</span></span><span style='font-size:10.0pt;color:#666600'>,</span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>args</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>null</span></span><span
+style='font-size:10.0pt;color:#666600'>)<span class=GramE>{</span></span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; <span
+class=SpellE>parent</span></span><span class=GramE><span style='font-size:10.0pt;
+color:#666600'>::</span></span><span class=SpellE><span style='font-size:10.0pt;
+color:#660066'>Component</span></span><span style='font-size:10.0pt;color:#666600'>(</span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>controller</span></span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>args</span></span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt;color:black'><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; &nbsp;</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>startTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span class=GramE><span style='font-size:10.0pt;
+color:#666600'>{</span></span><span style='font-size:10.0pt;color:black'><br>
+<span style='mso-spacerun:yes'>       </span><span style='mso-spacerun:yes'> </span>$html </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#008800'>'&lt;<span
+class=SpellE>strong</span>&gt;'</span><span style='font-size:10.0pt;color:#666600'>.</span><span
+style='font-size:10.0pt;color:#008800'>'&lt;font <span class=SpellE>color</span>=&quot;'</span><span
+style='font-size:10.0pt;color:#666600'>.</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>this</span></span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>attributes</span></span><span style='font-size:10.0pt;color:#666600'>[</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>color</span></span><span
+style='font-size:10.0pt;color:#666600'>].</span><span style='font-size:10.0pt;
+color:black'><br>
+<span style='mso-spacerun:yes'>        </span></span><span style='font-size:
+10.0pt;color:#008800'>'&quot; size=&quot;'</span><span style='font-size:10.0pt;
+color:#666600'>.</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>this</span></span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>attributes</span></span><span
+style='font-size:10.0pt;color:#666600'>[</span><span style='font-size:10.0pt;
+color:black'>size</span><span style='font-size:10.0pt;color:#666600'>].</span><span
+style='font-size:10.0pt;color:#008800'>'&quot;&gt;'</span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> $html</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span
+style='font-size:10.0pt;color:#666600'>}</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; &nbsp;</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>endTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span class=GramE><span style='font-size:10.0pt;
+color:#666600'>{</span></span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#008800'>'&lt;/font&gt;&lt;/<span class=SpellE>strong</span>&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>}</span></span><span style='font-size:
+10.0pt;color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>using</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>doAttributes</span>
+<span class=SpellE>method</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>function</span></span><span style='font-size:10.0pt;
+color:black'> <span class=SpellE>startTag</span></span><span style='font-size:
+10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;color:black'> </span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>{</span></span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; $html </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#008800'>'&lt;<span
+class=SpellE>strong</span>&gt;'</span><span style='font-size:10.0pt;color:#666600'>.</span><span
+style='font-size:10.0pt;color:#008800'>'&lt;font'</span><span style='font-size:
+10.0pt;color:#666600'>.</span><span style='font-size:10.0pt;color:black'> $<span
+class=SpellE>this</span></span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>doAttributes</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>.</span><span
+style='font-size:10.0pt;color:#008800'>'&gt;'</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> $html</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>use</span></span><span
+style='font-size:10.0pt;font-family:Arial'> in <span class=SpellE>view</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>faces</span>&gt;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&lt;@<span
+class=SpellE>import</span> <span class=SpellE>prefix</span>=&quot;<span
+class=SpellE>my</span>&quot; <span class=SpellE>taglib</span>=&quot;<span
+class=SpellE><span class=GramE>mypath</span></span><span class=GramE>.<span
+class=SpellE>strong</span></span>&quot;/&gt;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE><span class=GramE>my</span></span><span class=GramE>:<span
+class=SpellE>strong</span></span></span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;test&quot;</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#660066'>size</span><span style='font-size:10.0pt;
+color:#666600'>=</span><span style='font-size:10.0pt;color:#008800'>&quot;10&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>face</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>Arial</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>color</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>red</span>&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=SpellE><span style='font-size:10.0pt;color:black'>some</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>text</span><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE><span class=GramE>my</span></span><span class=GramE>:<span
+class=SpellE>strong</span></span>&gt;</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#000088'>&lt;/<span class=SpellE>faces</span>&gt;</span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+style='font-size:10.0pt;font-family:Arial'>@<span class=SpellE>Items</span> <o:p></o:p></span></p>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>Sample</span></span><span
+style='font-size:10.0pt;font-family:Arial'> <span class=SpellE>use</span> <span
+class=SpellE>items</span><o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:#000088'>import</span></span><span style='font-size:10.0pt;
+color:#666600'>(</span><span style='font-size:10.0pt;color:#008800'>&quot;<span
+class=SpellE><span class=GramE>phpf</span></span><span class=GramE>.<span
+class=SpellE>ui</span></span>.<span class=SpellE>component</span>&quot;</span><span
+style='font-size:10.0pt;color:#666600'>);</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>class</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>extends</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Component</span></span><span
+style='font-size:10.0pt;color:#666600'>{</span><span style='font-size:10.0pt;
+color:black'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Strong</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>FacesController</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#666600'>&amp;</span><span style='font-size:10.0pt;color:black'>$<span
+class=SpellE>controller</span></span><span style='font-size:10.0pt;color:#666600'>,</span><span
+style='font-size:10.0pt;color:black'>$<span class=SpellE>args</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span class=SpellE><span
+style='font-size:10.0pt;color:#000088'>null</span></span><span
+style='font-size:10.0pt;color:#666600'>){</span><span style='font-size:10.0pt;
+color:black'><br>
+<span class=SpellE>parent</span></span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>::</span></span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>Component</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>controller</span></span><span
+style='font-size:10.0pt;color:#666600'>,</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>args</span></span><span style='font-size:10.0pt;
+color:#666600'>);</span><span style='font-size:10.0pt;color:black'><br>
+</span><span style='font-size:10.0pt;color:#666600'>}</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp;</span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>startTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span class=GramE><span style='font-size:10.0pt;
+color:#666600'>{</span></span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$html </span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#008800'>'&lt;<span
+class=SpellE>strong</span>&gt;'</span><span style='font-size:10.0pt;color:#666600'>.</span><span
+style='font-size:10.0pt;color:#008800'>'&lt;font'</span><span style='font-size:
+10.0pt;color:#666600'>.</span><span style='font-size:10.0pt;color:black'> $<span
+class=SpellE>this</span></span><span style='font-size:10.0pt;color:#666600'>-&gt;</span><span
+class=SpellE><span style='font-size:10.0pt;color:black'>doAttributes</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#666600'>.</span><span
+style='font-size:10.0pt;color:#008800'>'&gt;'</span><span style='font-size:
+10.0pt;color:black'> </span><span style='font-size:10.0pt;color:#666600'>;</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>foreach</span></span><span
+style='font-size:10.0pt;color:#666600'>(</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>this</span></span><span style='font-size:10.0pt;
+color:#666600'>-&gt;</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>items</span></span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#000088'>as</span><span style='font-size:10.0pt;
+color:black'> $<span class=SpellE>item</span></span><span style='font-size:
+10.0pt;color:#666600'>)</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $html</span><span
+style='font-size:10.0pt;color:#666600'>.=</span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#008800'>'&lt;<span
+class=SpellE>br</span>/&gt;&lt;a <span class=SpellE>href</span>=&quot;'</span><span
+style='font-size:10.0pt;color:#666600'>.</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>item</span></span><span style='font-size:10.0pt;
+color:#666600'>[</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>url</span></span><span style='font-size:10.0pt;color:#666600'>].</span><span
+style='font-size:10.0pt;color:#008800'>'&quot;&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>.</span><span style='font-size:10.0pt;
+color:black'>$<span class=SpellE>item</span></span><span style='font-size:10.0pt;
+color:#666600'>[</span><span class=SpellE><span style='font-size:10.0pt;
+color:black'>title</span></span><span style='font-size:10.0pt;color:#666600'>].</span><span
+style='font-size:10.0pt;color:#008800'>'&lt;/a&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> $html</span><span style='font-size:10.0pt;
+color:#666600'>;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp;</span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>function</span></span><span
+style='font-size:10.0pt;color:black'> <span class=SpellE>endTag</span></span><span
+style='font-size:10.0pt;color:#666600'>()</span><span style='font-size:10.0pt;
+color:black'> </span><span class=GramE><span style='font-size:10.0pt;
+color:#666600'>{</span></span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&nbsp; &nbsp; &nbsp; &nbsp; </span><span
+class=SpellE><span style='font-size:10.0pt;color:#000088'>return</span></span><span
+style='font-size:10.0pt;color:black'> </span><span style='font-size:10.0pt;
+color:#008800'>'&lt;/font&gt;&lt;/<span class=SpellE>strong</span>&gt;'</span><span
+style='font-size:10.0pt;color:#666600'>;</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&nbsp; &nbsp; </span><span class=GramE><span
+style='font-size:10.0pt;color:#666600'>}</span></span><span style='font-size:
+10.0pt;color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+class=GramE><span style='font-size:10.0pt;color:#666600'>}</span></span><span
+style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=SpellE><span style='font-size:10.0pt;font-family:Arial'>use</span></span><span
+style='font-size:10.0pt;font-family:Arial'> in <span class=SpellE>view</span> <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-left:solid #CCCCCC 2.25pt;
+padding:0in 0in 0in 6.0pt;margin-left:24.0pt;margin-right:0in'><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE>faces</span>&gt;</span><span style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&lt;@<span
+class=SpellE>import</span> <span class=SpellE>prefix</span>=&quot;<span
+class=SpellE>my</span>&quot; <span class=SpellE>taglib</span>=&quot;<span
+class=SpellE><span class=GramE>mypath</span></span><span class=GramE>.<span
+class=SpellE>strong</span></span>&quot;/&gt;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;<span
+class=SpellE><span class=GramE>my</span></span><span class=GramE>:<span
+class=SpellE>strong</span></span></span><span style='font-size:10.0pt;
+color:black'> </span><span style='font-size:10.0pt;color:#660066'>name</span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;test&quot;</span><span style='font-size:10.0pt;color:black'> </span><span
+style='font-size:10.0pt;color:#660066'>size</span><span style='font-size:10.0pt;
+color:#666600'>=</span><span style='font-size:10.0pt;color:#008800'>&quot;4&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>face</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>Arial</span>&quot;</span><span
+style='font-size:10.0pt;color:black'> </span><span class=SpellE><span
+style='font-size:10.0pt;color:#660066'>color</span></span><span
+style='font-size:10.0pt;color:#666600'>=</span><span style='font-size:10.0pt;
+color:#008800'>&quot;<span class=SpellE>red</span>&quot;</span><span
+style='font-size:10.0pt;color:#000088'>&gt;</span><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></pre><pre style='border:none;mso-border-left-alt:
+solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:black'>&lt;@<span class=SpellE>item</span> <span
+class=SpellE>url</span>=&quot;http://www.google.com&quot; <span class=SpellE>title</span>=&quot;<span
+class=SpellE>google</span>&quot;/&gt;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:black'>&lt;@<span
+class=SpellE>item</span> <span class=SpellE>url</span>=&quot;http://www.webmahsulleri.com&quot; <span
+class=SpellE>title</span>=&quot;<span class=SpellE>WebMahsulleri</span>&quot;/&gt;<o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span class=SpellE><span style='font-size:
+10.0pt;color:black'>some</span></span><span style='font-size:10.0pt;color:black'> <span
+class=SpellE>text</span><o:p></o:p></span></pre><pre style='border:none;
+mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;mso-padding-alt:0in 0in 0in 6.0pt'><span
+style='font-size:10.0pt;color:#000088'>&lt;/<span class=SpellE><span
+class=GramE>my</span></span><span class=GramE>:<span class=SpellE>strong</span></span>&gt;</span><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></pre><pre
+style='border:none;mso-border-left-alt:solid #CCCCCC 2.25pt;padding:0in;
+mso-padding-alt:0in 0in 0in 6.0pt'><span style='font-size:10.0pt;color:#000088'>&lt;/<span
+class=SpellE>faces</span>&gt;</span><span style='font-size:10.0pt'><o:p></o:p></span></pre></div>
+
+<p class=MsoNormal style='tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
